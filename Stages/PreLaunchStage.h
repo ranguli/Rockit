@@ -1,0 +1,6 @@
+#ifndef ROCKIT_PRE_LAUNCH_STAGE_H
+#define ROCKIT_PRE_LAUNCH_STAGE_H
+
+void preLaunchStage();
+
+#endif // ROCKIT_PRE_LAUNCH_STAGE_H
