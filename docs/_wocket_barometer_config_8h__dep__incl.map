@@ -1,0 +1,11 @@
+<map id="WocketBarometerConfig.h" name="WocketBarometerConfig.h">
+<area shape="rect" id="node1" title=" " alt="" coords="461,5,652,32"/>
+<area shape="rect" id="node2" href="$_config_8h.html" title=" " alt="" coords="519,80,594,107"/>
+<area shape="rect" id="node3" href="$_pre_launch_stage_8cpp.html" title=" " alt="" coords="5,155,159,181"/>
+<area shape="rect" id="node4" href="$_recovery_stage_8cpp.html" title=" " alt="" coords="183,155,330,181"/>
+<area shape="rect" id="node5" href="$_beep_and_blink_8cpp.html" title=" " alt="" coords="355,155,495,181"/>
+<area shape="rect" id="node6" href="$_pins_8cpp.html" title=" " alt="" coords="519,155,595,181"/>
+<area shape="rect" id="node7" href="$_main_8cpp.html" title=" " alt="" coords="619,155,700,181"/>
+<area shape="rect" id="node8" href="$_rotary_switch_8cpp.html" title=" " alt="" coords="724,155,859,181"/>
+<area shape="rect" id="node9" href="$_accelerometer_base_8cpp.html" title=" " alt="" coords="883,155,1059,181"/>
+</map>

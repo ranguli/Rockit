@@ -1,0 +1,5 @@
+<map id="Wocket::Sensor::Accelerometer::ADXL343" name="Wocket::Sensor::Accelerometer::ADXL343">
+<area shape="rect" id="node1" title=" " alt="" coords="21,155,245,196"/>
+<area shape="rect" id="node2" href="$class_wocket_1_1_sensor_1_1_accelerometer_base.html" title=" " alt="" coords="5,80,261,107"/>
+<area shape="rect" id="node3" href="$class_wocket_1_1_sensor_1_1_sensor.html" title=" " alt="" coords="47,5,220,32"/>
+</map>

@@ -5,7 +5,6 @@
 #include "BeepAndBlink.h"
 #include "Hardware/LEDs.h"
 #include "Hardware/PiezoBuzzer.h"
-#include "State.h"
 
 /**
 void altitudeToDigits(){ // Convert altitude to digits

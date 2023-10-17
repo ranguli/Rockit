@@ -1,0 +1,13 @@
+<map id="AccelerometerConfig.h" name="AccelerometerConfig.h">
+<area shape="rect" id="node1" title=" " alt="" coords="714,5,885,32"/>
+<area shape="rect" id="node2" href="$_config_8h.html" title=" " alt="" coords="431,80,506,107"/>
+<area shape="rect" id="node9" href="$_a_d_x_l343_8h.html" title=" " alt="" coords="911,80,1005,107"/>
+<area shape="rect" id="node11" href="$_accelerometer_base_8h.html" title=" " alt="" coords="719,80,880,107"/>
+<area shape="rect" id="node3" href="$_pins_8cpp.html" title=" " alt="" coords="5,155,81,181"/>
+<area shape="rect" id="node4" href="$_rotary_switch_8cpp.html" title=" " alt="" coords="105,155,240,181"/>
+<area shape="rect" id="node5" href="$_beep_and_blink_8cpp.html" title=" " alt="" coords="264,155,404,181"/>
+<area shape="rect" id="node6" href="$_main_8cpp.html" title=" " alt="" coords="428,155,509,181"/>
+<area shape="rect" id="node7" href="$_pre_launch_stage_8cpp.html" title=" " alt="" coords="533,155,687,181"/>
+<area shape="rect" id="node8" href="$_accelerometer_base_8cpp.html" title=" " alt="" coords="711,155,887,181"/>
+<area shape="rect" id="node10" href="$_a_d_x_l343_8cpp.html" title=" " alt="" coords="912,155,1020,181"/>
+</map>

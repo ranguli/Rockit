@@ -16,14 +16,14 @@
 #include "Battery.h"
 #include "ServoMotor.h"
 
-#include "AccelerationData.h"
+#include "WocketAccelerationData.h"
 
 //#include "Hardware/Sensors/BarometricSensor.h"
 
 #include "BeepAndBlink.h"
 
-#include "stages/RecoveryStage.h"
-#include "stages/PreLaunchStage.h"
+//#include "stages/RecoveryStage.h"
+//#include "stages/PreLaunchStage.h"
 
 #include "RotarySwitch.h"
 #include "State.h"
@@ -81,7 +81,7 @@ void setup() {
   switchStartup();
 
   delay(FLIGHT_COMPUTER_ARM_DELAY_MS);  //Wait for 10 seconds to allow the rocketeer to prepare for launch before the flight computer is armed.
-  preLaunchStage();                     //Here I store the first second of data into the circular buffers
+  //preLaunchStage();                     //Here I store the first second of data into the circular buffers
 
   launchDetector.begin(LAUNCH_ACCELERATION_THRESHOLD, LAUNCH_ALTITUDE_THRESHOLD);
 
@@ -134,7 +134,7 @@ void flightLoop() {
 
   barometer->getPressureReading();
   temp = barometer->getTemperatureReading();
-  AccelerationData accelerationData = accelerometer->getAcceleration();
+  WocketAccelerationData accelerationData = accelerometer->getAccelerationReading();
 
   altitudeDelta = barometer->getAltitudeDelta();
   filteredAltitudeDelta = barometer->getFilteredAltitudeDelta();
@@ -145,7 +145,8 @@ void flightLoop() {
   }
 
   t1 = millis() - t4 - times[0];
-  recoveryStage();
+  
+  //recoveryStage();
 
   /**
   logfile.print(t1);

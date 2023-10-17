@@ -1,0 +1,746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Wocket: Config.h File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Wocket
+   </div>
+   <div id="projectbrief">Rocket flight computer software for micro-controllers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_config_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Config.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;Wire.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_accelerometer_config_8h_source.html">AccelerometerConfig.h</a>&quot;</code><br />
+<code>#include &quot;BarometerConfig.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for Config.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_config_8h__incl.svg" width="491" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_config_8h__dep__incl.svg" width="894" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="_config_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aead6f021e5d8eaeb997539b230f8b0fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#aead6f021e5d8eaeb997539b230f8b0fa">USE_SIMULATION_MODE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aead6f021e5d8eaeb997539b230f8b0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5cc0023af0923f5e57d107bdd8f985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a6b5cc0023af0923f5e57d107bdd8f985">PIN_I2C_SCL</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:a6b5cc0023af0923f5e57d107bdd8f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68f3d97e44f8f8ebc45dc9b05c10e83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#ae68f3d97e44f8f8ebc45dc9b05c10e83">SERVO_0_PIN</a>&#160;&#160;&#160;28</td></tr>
+<tr class="separator:ae68f3d97e44f8f8ebc45dc9b05c10e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1d168b0c8c9c400a7ff16fba5f4a42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a5d1d168b0c8c9c400a7ff16fba5f4a42">SERVO_1_PIN</a>&#160;&#160;&#160;27</td></tr>
+<tr class="separator:a5d1d168b0c8c9c400a7ff16fba5f4a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6b49c5172a31ebfddf37a9d31efe92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a3d6b49c5172a31ebfddf37a9d31efe92">SERVO_POWER_SAVING_TIMEOUT_MS</a>&#160;&#160;&#160;1999</td></tr>
+<tr class="separator:a3d6b49c5172a31ebfddf37a9d31efe92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221157bbeea7b6ef2611585816f9c7de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a221157bbeea7b6ef2611585816f9c7de">SERVO_DELAY_MS</a>&#160;&#160;&#160;499</td></tr>
+<tr class="separator:a221157bbeea7b6ef2611585816f9c7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5180fff8240d28e8c23bdda1c2f0c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a2b5180fff8240d28e8c23bdda1c2f0c1">SERVO_CURRENT_SPIKE_DELAY_MS</a>&#160;&#160;&#160;99</td></tr>
+<tr class="separator:a2b5180fff8240d28e8c23bdda1c2f0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5aa5e9fe468ab72e77ee2de77ecda1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#ad5aa5e9fe468ab72e77ee2de77ecda1e">PIN_SPI_RX</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ad5aa5e9fe468ab72e77ee2de77ecda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab8624ca6fcf8e0517fbd8d46b18d32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#afab8624ca6fcf8e0517fbd8d46b18d32">PIN_SPI_TX</a>&#160;&#160;&#160;19</td></tr>
+<tr class="separator:afab8624ca6fcf8e0517fbd8d46b18d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704e2660aedb97382a6503160b27d968"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a704e2660aedb97382a6503160b27d968">PIN_SPI_SCK</a>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:a704e2660aedb97382a6503160b27d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d478b7b724108734ce356a48daff5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a47d478b7b724108734ce356a48daff5c">PIN_SPI_CS</a>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:a47d478b7b724108734ce356a48daff5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399e51d6b82b2110f782455882c42e62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a399e51d6b82b2110f782455882c42e62">PIEZO_BUZZER_PIN</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a399e51d6b82b2110f782455882c42e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1c5cbd0d303e0f9725c077d7fb4f1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#acd1c5cbd0d303e0f9725c077d7fb4f1e">PIEZO_BUZZER_DUTY_CYCLE</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:acd1c5cbd0d303e0f9725c077d7fb4f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d26c27b621f1f78132d4ffa2de61a20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a3d26c27b621f1f78132d4ffa2de61a20">PIEZO_BUZZER_FREQUENCY</a>&#160;&#160;&#160;4000</td></tr>
+<tr class="separator:a3d26c27b621f1f78132d4ffa2de61a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc22023b4945f6677c5a8e4702405ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#abc22023b4945f6677c5a8e4702405ac2">PIEZO_BUZZER_DYNAMIC_RANGE</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:abc22023b4945f6677c5a8e4702405ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8992071569a9e5afd4f12f4d2346441"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#ae8992071569a9e5afd4f12f4d2346441">PIEZO_BUZZER_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ae8992071569a9e5afd4f12f4d2346441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab865430cd9ba9271c4db84ad06d3b27d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27d">EEPROM_ADDRESSES</a> { <br />
+&#160;&#160;<a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27da3da668d37f2cb389c683291ea2d4173b">ADDRESS_AUTO_FLIGHT_MODE_DEPLOY_TIME_MS</a>
+, <a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27da55077227bebd31a0fae321f65187d5ec">ADDRESS_TIMER_FLIGHT_MODE_DEPLOY_TIME_MS</a>
+, <a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27dafbefc3d732d6c5953053930c47474888">ADDRESS_SERVO_1_START_POSITION</a>
+, <a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27daacb10c763a084fc7fcd6b9b64a12a8a9">ADDRESS_SERVO_1_END_POSITION</a>
+, <br />
+&#160;&#160;<a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27da3b3897ea11e8152aaeafe45f2ccd2acf">ADDRESS_SERVO_2_START_POSITION</a>
+, <a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27dae17b812028f508072f7f84a434ba93fc">ADDRESS_SERVO_2_END_POSITION</a>
+, <a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27dadf89da7d8a6b9c8db96afde2ecc342b0">ADDRESS_SERVO_2_DEPLOY_TIME_MS</a>
+<br />
+ }</td></tr>
+<tr class="separator:ab865430cd9ba9271c4db84ad06d3b27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a440ecf5ba415d9d56f123699c18bd106"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a440ecf5ba415d9d56f123699c18bd106">ACCELEROMETER_UID</a> = 1</td></tr>
+<tr class="separator:a440ecf5ba415d9d56f123699c18bd106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de4856fd6e688ae140043efb36f7075"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a8de4856fd6e688ae140043efb36f7075">BAROMETRIC_INITIAL_AVERAGE_READINGS</a> = 16</td></tr>
+<tr class="separator:a8de4856fd6e688ae140043efb36f7075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc99aeace4b2bed3a0afaf470af26c2"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a3bc99aeace4b2bed3a0afaf470af26c2">MAX_ADC_RESOLUTION</a></td></tr>
+<tr class="separator:a3bc99aeace4b2bed3a0afaf470af26c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c53ce53962bb48c8fd8b88df275e34"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#ab7c53ce53962bb48c8fd8b88df275e34">ADC_REFERENCE_VOLTAGE</a></td></tr>
+<tr class="separator:ab7c53ce53962bb48c8fd8b88df275e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4f2652583c2d5a0905fdeb521f3e28"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a1b4f2652583c2d5a0905fdeb521f3e28">LAUNCH_ALTITUDE_THRESHOLD</a> = 10.0</td></tr>
+<tr class="separator:a1b4f2652583c2d5a0905fdeb521f3e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502eb85f21a754ae94f821e06be67f8f"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a502eb85f21a754ae94f821e06be67f8f">LAUNCH_ACCELERATION_THRESHOLD</a> = 2.0</td></tr>
+<tr class="separator:a502eb85f21a754ae94f821e06be67f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16d27a8220ffe9870eca6bea0bbe904"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#af16d27a8220ffe9870eca6bea0bbe904">GRAVITY_CONSTANT</a> = 9.81</td></tr>
+<tr class="separator:af16d27a8220ffe9870eca6bea0bbe904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3a497b05dc81ce99c1af0a2a9e3ba3"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#aff3a497b05dc81ce99c1af0a2a9e3ba3">ALTITUDE_CONVERSION_FACTOR</a> = 44330.0</td></tr>
+<tr class="separator:aff3a497b05dc81ce99c1af0a2a9e3ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6fa77cad60e7e1f5d8491783beb564"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#add6fa77cad60e7e1f5d8491783beb564">PRESSURE_ALTITUDE_EXPONENT</a> = 5.255</td></tr>
+<tr class="separator:add6fa77cad60e7e1f5d8491783beb564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f86e238fc153224aa7f514c6fd77b08"><td class="memItemLeft" align="right" valign="top">constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a3f86e238fc153224aa7f514c6fd77b08">FLIGHT_COMPUTER_ARM_DELAY_MS</a> = 10000</td></tr>
+<tr class="separator:a3f86e238fc153224aa7f514c6fd77b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad113083c874c6c0740515bbae0dc2324"><td class="memItemLeft" align="right" valign="top">constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#ad113083c874c6c0740515bbae0dc2324">FLIGHT_COMPUTER_TIMEOUT_MS</a> = 30000</td></tr>
+<tr class="separator:ad113083c874c6c0740515bbae0dc2324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e76d5f01d23f485f7bd0acacb13b6c0"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a5e76d5f01d23f485f7bd0acacb13b6c0">LOW_BATTERY_VOLTAGE_THRESHOLD</a></td></tr>
+<tr class="separator:a5e76d5f01d23f485f7bd0acacb13b6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5671775a072cec546093f4db374f0393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html">Wocket::Sensor::SensorPackage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_config_8h.html#a5671775a072cec546093f4db374f0393">sensorPackage</a> = new <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html">Wocket::Sensor::SensorPackage</a>()</td></tr>
+<tr class="separator:a5671775a072cec546093f4db374f0393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acd1c5cbd0d303e0f9725c077d7fb4f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1c5cbd0d303e0f9725c077d7fb4f1e">&#9670;&nbsp;</a></span>PIEZO_BUZZER_DUTY_CYCLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIEZO_BUZZER_DUTY_CYCLE&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc22023b4945f6677c5a8e4702405ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc22023b4945f6677c5a8e4702405ac2">&#9670;&nbsp;</a></span>PIEZO_BUZZER_DYNAMIC_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIEZO_BUZZER_DYNAMIC_RANGE&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8992071569a9e5afd4f12f4d2346441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8992071569a9e5afd4f12f4d2346441">&#9670;&nbsp;</a></span>PIEZO_BUZZER_ENABLED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIEZO_BUZZER_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d26c27b621f1f78132d4ffa2de61a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d26c27b621f1f78132d4ffa2de61a20">&#9670;&nbsp;</a></span>PIEZO_BUZZER_FREQUENCY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIEZO_BUZZER_FREQUENCY&#160;&#160;&#160;4000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a399e51d6b82b2110f782455882c42e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399e51d6b82b2110f782455882c42e62">&#9670;&nbsp;</a></span>PIEZO_BUZZER_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIEZO_BUZZER_PIN&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b5cc0023af0923f5e57d107bdd8f985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5cc0023af0923f5e57d107bdd8f985">&#9670;&nbsp;</a></span>PIN_I2C_SCL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_I2C_SCL&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47d478b7b724108734ce356a48daff5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d478b7b724108734ce356a48daff5c">&#9670;&nbsp;</a></span>PIN_SPI_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SPI_CS&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5aa5e9fe468ab72e77ee2de77ecda1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5aa5e9fe468ab72e77ee2de77ecda1e">&#9670;&nbsp;</a></span>PIN_SPI_RX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SPI_RX&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a704e2660aedb97382a6503160b27d968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704e2660aedb97382a6503160b27d968">&#9670;&nbsp;</a></span>PIN_SPI_SCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SPI_SCK&#160;&#160;&#160;18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afab8624ca6fcf8e0517fbd8d46b18d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab8624ca6fcf8e0517fbd8d46b18d32">&#9670;&nbsp;</a></span>PIN_SPI_TX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SPI_TX&#160;&#160;&#160;19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae68f3d97e44f8f8ebc45dc9b05c10e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68f3d97e44f8f8ebc45dc9b05c10e83">&#9670;&nbsp;</a></span>SERVO_0_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVO_0_PIN&#160;&#160;&#160;28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d1d168b0c8c9c400a7ff16fba5f4a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1d168b0c8c9c400a7ff16fba5f4a42">&#9670;&nbsp;</a></span>SERVO_1_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVO_1_PIN&#160;&#160;&#160;27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b5180fff8240d28e8c23bdda1c2f0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b5180fff8240d28e8c23bdda1c2f0c1">&#9670;&nbsp;</a></span>SERVO_CURRENT_SPIKE_DELAY_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVO_CURRENT_SPIKE_DELAY_MS&#160;&#160;&#160;99</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a221157bbeea7b6ef2611585816f9c7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221157bbeea7b6ef2611585816f9c7de">&#9670;&nbsp;</a></span>SERVO_DELAY_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVO_DELAY_MS&#160;&#160;&#160;499</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d6b49c5172a31ebfddf37a9d31efe92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6b49c5172a31ebfddf37a9d31efe92">&#9670;&nbsp;</a></span>SERVO_POWER_SAVING_TIMEOUT_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVO_POWER_SAVING_TIMEOUT_MS&#160;&#160;&#160;1999</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aead6f021e5d8eaeb997539b230f8b0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead6f021e5d8eaeb997539b230f8b0fa">&#9670;&nbsp;</a></span>USE_SIMULATION_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_SIMULATION_MODE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ab865430cd9ba9271c4db84ad06d3b27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab865430cd9ba9271c4db84ad06d3b27d">&#9670;&nbsp;</a></span>EEPROM_ADDRESSES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_config_8h.html#ab865430cd9ba9271c4db84ad06d3b27d">EEPROM_ADDRESSES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27da3da668d37f2cb389c683291ea2d4173b"></a>ADDRESS_AUTO_FLIGHT_MODE_DEPLOY_TIME_MS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27da55077227bebd31a0fae321f65187d5ec"></a>ADDRESS_TIMER_FLIGHT_MODE_DEPLOY_TIME_MS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27dafbefc3d732d6c5953053930c47474888"></a>ADDRESS_SERVO_1_START_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27daacb10c763a084fc7fcd6b9b64a12a8a9"></a>ADDRESS_SERVO_1_END_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27da3b3897ea11e8152aaeafe45f2ccd2acf"></a>ADDRESS_SERVO_2_START_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27dae17b812028f508072f7f84a434ba93fc"></a>ADDRESS_SERVO_2_END_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab865430cd9ba9271c4db84ad06d3b27dadf89da7d8a6b9c8db96afde2ecc342b0"></a>ADDRESS_SERVO_2_DEPLOY_TIME_MS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a440ecf5ba415d9d56f123699c18bd106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440ecf5ba415d9d56f123699c18bd106">&#9670;&nbsp;</a></span>ACCELEROMETER_UID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t ACCELEROMETER_UID = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7c53ce53962bb48c8fd8b88df275e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c53ce53962bb48c8fd8b88df275e34">&#9670;&nbsp;</a></span>ADC_REFERENCE_VOLTAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float ADC_REFERENCE_VOLTAGE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff3a497b05dc81ce99c1af0a2a9e3ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3a497b05dc81ce99c1af0a2a9e3ba3">&#9670;&nbsp;</a></span>ALTITUDE_CONVERSION_FACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float ALTITUDE_CONVERSION_FACTOR = 44330.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8de4856fd6e688ae140043efb36f7075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de4856fd6e688ae140043efb36f7075">&#9670;&nbsp;</a></span>BAROMETRIC_INITIAL_AVERAGE_READINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t BAROMETRIC_INITIAL_AVERAGE_READINGS = 16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f86e238fc153224aa7f514c6fd77b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f86e238fc153224aa7f514c6fd77b08">&#9670;&nbsp;</a></span>FLIGHT_COMPUTER_ARM_DELAY_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned int FLIGHT_COMPUTER_ARM_DELAY_MS = 10000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad113083c874c6c0740515bbae0dc2324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad113083c874c6c0740515bbae0dc2324">&#9670;&nbsp;</a></span>FLIGHT_COMPUTER_TIMEOUT_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned int FLIGHT_COMPUTER_TIMEOUT_MS = 30000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af16d27a8220ffe9870eca6bea0bbe904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16d27a8220ffe9870eca6bea0bbe904">&#9670;&nbsp;</a></span>GRAVITY_CONSTANT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float GRAVITY_CONSTANT = 9.81</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a502eb85f21a754ae94f821e06be67f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502eb85f21a754ae94f821e06be67f8f">&#9670;&nbsp;</a></span>LAUNCH_ACCELERATION_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float LAUNCH_ACCELERATION_THRESHOLD = 2.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b4f2652583c2d5a0905fdeb521f3e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4f2652583c2d5a0905fdeb521f3e28">&#9670;&nbsp;</a></span>LAUNCH_ALTITUDE_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float LAUNCH_ALTITUDE_THRESHOLD = 10.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e76d5f01d23f485f7bd0acacb13b6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e76d5f01d23f485f7bd0acacb13b6c0">&#9670;&nbsp;</a></span>LOW_BATTERY_VOLTAGE_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float LOW_BATTERY_VOLTAGE_THRESHOLD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bc99aeace4b2bed3a0afaf470af26c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc99aeace4b2bed3a0afaf470af26c2">&#9670;&nbsp;</a></span>MAX_ADC_RESOLUTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t MAX_ADC_RESOLUTION</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add6fa77cad60e7e1f5d8491783beb564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6fa77cad60e7e1f5d8491783beb564">&#9670;&nbsp;</a></span>PRESSURE_ALTITUDE_EXPONENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float PRESSURE_ALTITUDE_EXPONENT = 5.255</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5671775a072cec546093f4db374f0393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5671775a072cec546093f4db374f0393">&#9670;&nbsp;</a></span>sensorPackage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html">Wocket::Sensor::SensorPackage</a> sensorPackage = new <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html">Wocket::Sensor::SensorPackage</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_config_8h.html">Config.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

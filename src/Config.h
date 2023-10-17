@@ -1,11 +1,11 @@
 #ifndef WOCKET_CONFIG_H
 #define WOCKET_CONFIG_H
 
+#include <cstdint>
+
 #include <Wire.h>
-#include "Accelerometer.h"
-#include "AccelerometerConfig.h"
-#include "Barometer.h"
-#include "BarometerConfig.h"
+
+//#include "BarometerConfig.h"
 
 // -------------------
 // | Simulation mode |
@@ -18,18 +18,18 @@
 // ---------------------------------
 
 // Assign a unique ID to the accelerometer sensor.
-#define ACCELEROMETER_UID 12345
+const uint8_t ACCELEROMETER_UID = 1;
 
 // The number of pressure readings that should be taken (and then averaged out) to determine the initial barometric pressure on the ground.
-#define BAROMETRIC_INITIAL_AVERAGE_READINGS 16
+const uint8_t BAROMETRIC_INITIAL_AVERAGE_READINGS = 16;
 
 // Uncomment this option if you are using an Adafruit ADXL343 accelerometer.
 // You can leave this as is if you're using a standard Rockit.
-#define USE_ADXL343
+//#define USE_ADXL343
 
 // Uncomment this option if you are using a Sparkfun MS5637 barometric pressure sensor.
 // You can leave this as is if you're using a standard Rockit.
-#define USE_MS5637
+//#define USE_MS5637
 
 // --------------------------------
 // | Board-Specific Configuration |
@@ -39,15 +39,14 @@
 // in bits. In the case of an RP2040-based board like the Rockit, 
 // which has a 12-bit ADC, the value will be 12. 
 // On other micro-controllers, it may be another value. 
-#define MAX_ADC_RESOLUTION 12 
+extern const uint8_t MAX_ADC_RESOLUTION;
 
 // The reference voltage of the boards ADC. On a Rockit, this is 3.3 volts.
-#define ADC_REFERENCE_VOLTAGE 3.3
+extern const float ADC_REFERENCE_VOLTAGE;
 
 // Pinouts:
 
 // I2C
-#define PIN_I2C_SDA 10
 #define PIN_I2C_SCL 11
 
 // Servo settings
@@ -75,21 +74,21 @@
 // --------------------
 
 // Altitude threshold for launch detection. An altitude above the threshold (in meters) means we have launched.
-#define LAUNCH_ALTITUDE_THRESHOLD 10.0
-#define LAUNCH_ACCELERATION_THRESHOLD 2.0
+constexpr float LAUNCH_ALTITUDE_THRESHOLD = 10.0;
+constexpr float LAUNCH_ACCELERATION_THRESHOLD = 2.0;
 
 // -----------------------
 // | Physical magnitudes |
 // -----------------------
 
 // Change this for more precision, or if you will be using Wocket on a different planet.
-#define GRAVITY_CONSTANT 9.81
+constexpr float GRAVITY_CONSTANT = 9.81;
 
 // This is an empirical constant that helps relate pressure to altitude in meters.
-#define ALTITUDE_CONVERSION_FACTOR 44330.0
+constexpr float ALTITUDE_CONVERSION_FACTOR = 44330.0;
 
 // Mathematical constant use for calculations with the barometric sensor
-#define PRESSURE_ALTITUDE_EXPONENT 5.255
+constexpr float PRESSURE_ALTITUDE_EXPONENT = 5.255;
 
 // ---------------------------------
 // | Flight Computer Configuration |
@@ -97,10 +96,14 @@
 
 // How many milliseconds the flight computer should wait after being powered on 
 // before it should be "armed". The default is 10 seconds.
-#define FLIGHT_COMPUTER_ARM_DELAY_MS 10000
+constexpr unsigned int FLIGHT_COMPUTER_ARM_DELAY_MS = 10000;
 
 // By default, Rockit allows 5 minutes (or 300,000 milliseconds) of data logging time.
-#define FLIGHT_COMPUTER_TIMEOUT_MS 30000
+constexpr unsigned int FLIGHT_COMPUTER_TIMEOUT_MS = 30000;
+
+
+// A value below this threshold is considered "low battery"
+extern const float LOW_BATTERY_VOLTAGE_THRESHOLD;
 
 
 // --------------------
@@ -119,17 +122,19 @@ enum EEPROM_ADDRESSES {
   ADDRESS_SERVO_2_DEPLOY_TIME_MS
 }; 
 
+Wocket::Sensor::SensorPackage sensorPackage = new Wocket::Sensor::SensorPackage();
 
 #ifdef USE_ADXL343
-    #include "ADXL343_Accelerometer.h"
-    AccelerometerConfig accelConfig = {123, &Wire1};
-    Accelerometer* accelerometer = new ADXL343_Accelerometer(accelConfig);
+    #include "ADXL343.h"
+    Wocket::Sensor::AccelerometerConfig accelConfig = {123, &Wire1};
+    Wocket::Sensor::ADXL343* accelerometer = new Wocket::Sensor::ADXL343(accelConfig);
+    sensorPackage.addSensor(std::make_unique<Wocket::Sensor::ADXL343>());
 #endif
 
 #ifdef USE_MS5637
-    #include "MS5637_Barometer.h"
-    Barometer* barometer = new MS5637_Barometer();
-    BarometerConfig barometerConfig = {BAROMETRIC_INITIAL_AVERAGE_READINGS, &Wire1};
+    #include "WocketMS5637.h"
+    WocketBarometer* barometer = new WocketMS5637();
+    WocketBarometerConfig barometerConfig = {BAROMETRIC_INITIAL_AVERAGE_READINGS, &Wire1};
 #endif
 
 #endif // WOCKET_CONFIG_H
