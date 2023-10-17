@@ -2,7 +2,17 @@ var annotated_dup =
 [
     [ "Wocket", "namespace_wocket.html", [
       [ "Hardware", "namespace_wocket_1_1_hardware.html", [
-        [ "Battery", "class_wocket_1_1_hardware_1_1_battery.html", "class_wocket_1_1_hardware_1_1_battery" ]
+        [ "Battery", "class_wocket_1_1_hardware_1_1_battery.html", "class_wocket_1_1_hardware_1_1_battery" ],
+        [ "BuzzerBase", "class_wocket_1_1_hardware_1_1_buzzer_base.html", "class_wocket_1_1_hardware_1_1_buzzer_base" ],
+        [ "BuzzerFactory", "class_wocket_1_1_hardware_1_1_buzzer_factory.html", "class_wocket_1_1_hardware_1_1_buzzer_factory" ],
+        [ "EEPROM", "class_wocket_1_1_hardware_1_1_e_e_p_r_o_m.html", "class_wocket_1_1_hardware_1_1_e_e_p_r_o_m" ],
+        [ "HardwareBase", "class_wocket_1_1_hardware_1_1_hardware_base.html", "class_wocket_1_1_hardware_1_1_hardware_base" ],
+        [ "HardwarePackage", "class_wocket_1_1_hardware_1_1_hardware_package.html", "class_wocket_1_1_hardware_1_1_hardware_package" ]
+      ] ],
+      [ "Platform", "namespace_wocket_1_1_platform.html", [
+        [ "Arduino", "namespace_wocket_1_1_platform_1_1_arduino.html", [
+          [ "ArduinoBuzzer", "class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer.html", "class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer" ]
+        ] ]
       ] ],
       [ "Sensor", "namespace_wocket_1_1_sensor.html", [
         [ "AccelerometerBase", "class_wocket_1_1_sensor_1_1_accelerometer_base.html", "class_wocket_1_1_sensor_1_1_accelerometer_base" ],
@@ -17,12 +27,11 @@ var annotated_dup =
     ] ],
     [ "CircularBuffer", "class_circular_buffer.html", "class_circular_buffer" ],
     [ "DataLogger", "class_data_logger.html", "class_data_logger" ],
-    [ "HardwareAbstractionLayer", "class_hardware_abstraction_layer.html", "class_hardware_abstraction_layer" ],
     [ "LaunchDetector", "class_launch_detector.html", "class_launch_detector" ],
     [ "Pinout", "struct_pinout.html", "struct_pinout" ],
+    [ "Platform", "class_platform.html", "class_platform" ],
     [ "Rockit", "class_rockit.html", "class_rockit" ],
     [ "ServoMotor", "class_servo_motor.html", "class_servo_motor" ],
     [ "Servos", "class_servos.html", "class_servos" ],
-    [ "WocketAccelerationData", "struct_wocket_acceleration_data.html", "struct_wocket_acceleration_data" ],
     [ "WocketBarometerConfig", "struct_wocket_barometer_config.html", "struct_wocket_barometer_config" ]
 ];

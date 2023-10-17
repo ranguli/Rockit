@@ -9,11 +9,11 @@ var namespace_wocket_1_1_sensor =
     [ "SensorData", "struct_wocket_1_1_sensor_1_1_sensor_data.html", "struct_wocket_1_1_sensor_1_1_sensor_data" ],
     [ "SensorPackage", "class_wocket_1_1_sensor_1_1_sensor_package.html", "class_wocket_1_1_sensor_1_1_sensor_package" ],
     [ "WocketCapabilityFlags", "namespace_wocket_1_1_sensor.html#ac5736a133109ce07dfccde1fd6544727", null ],
-    [ "WocketSensorCapability", "namespace_wocket_1_1_sensor.html#a73030b3d5988afe23753ddd5f6e7d8da", [
-      [ "Acceleration", "namespace_wocket_1_1_sensor.html#a73030b3d5988afe23753ddd5f6e7d8daa3b926d163371fd620b09b63219b12f52", null ],
-      [ "Pressure", "namespace_wocket_1_1_sensor.html#a73030b3d5988afe23753ddd5f6e7d8daaa78578c428179b490a0461e76ba5f319", null ],
-      [ "Temperature", "namespace_wocket_1_1_sensor.html#a73030b3d5988afe23753ddd5f6e7d8daaee7a8e262285ed49ea1b4e4ae11525bd", null ],
-      [ "Humidity", "namespace_wocket_1_1_sensor.html#a73030b3d5988afe23753ddd5f6e7d8daaddab800b54d009aa0408ebb9a4ee418d", null ],
-      [ "Altitude", "namespace_wocket_1_1_sensor.html#a73030b3d5988afe23753ddd5f6e7d8daa613a3d4fa7b8e2538d1e559cbd572902", null ]
+    [ "SensorCapability", "namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9d", [
+      [ "CAPABILITY_ACCELERATION", "namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9da94b69eb4b7a585782592023380d6849b", null ],
+      [ "CAPABILITY_PRESSURE", "namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9dae2517cbbea4ea26c80befb178837ce16", null ],
+      [ "CAPABILITY_TEMPERATURE", "namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9da2299997171383649e9878f4bf6425781", null ],
+      [ "CAPABILITY_HUMIDITY", "namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9da5e01721dc02f5f0672f89d7789a39b27", null ],
+      [ "CAPABILITY_ALTITUDE", "namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9dac13b8c1c0c0e05f5b92cf612dbbb9d4f", null ]
     ] ]
 ];

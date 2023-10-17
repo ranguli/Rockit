@@ -122,11 +122,20 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>acceleration
 : <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html#aea21c47f7ebc80a19c44688a5070a40e">Wocket::Sensor::SensorData</a>
 </li>
+<li>addHardware()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_package.html#a0a34d74a2ec8e161a7a33089d1a1c7ea">Wocket::Hardware::HardwarePackage</a>
+</li>
 <li>addSensor()
 : <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ae922f2a824d06dd9ef8fd6a87a049777">Wocket::Sensor::SensorPackage</a>
 </li>
 <li>ADXL343()
 : <a class="el" href="class_wocket_1_1_sensor_1_1_a_d_x_l343.html#a3e97d93b849f5317436933136eccc195">Wocket::Sensor::ADXL343</a>
+</li>
+<li>altitude
+: <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html#a808e4a6c3c29bdcfea78aa57b77a6e90">Wocket::Sensor::SensorData</a>
+</li>
+<li>ArduinoBuzzer()
+: <a class="el" href="class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer.html#ae76c7a9a53d75eda094412deee6fabed">Wocket::Platform::Arduino::ArduinoBuzzer</a>
 </li>
 <li>attach()
 : <a class="el" href="class_servo_motor.html#ae56bbe3adcab47541efa9b362e7508e5">ServoMotor</a>
@@ -142,6 +151,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>BATTERY_PIN
+: <a class="el" href="struct_pinout.html#ae9e6576a50c1cb0078d9fdf18ab8888c">Pinout</a>
+</li>
 <li>begin()
 : <a class="el" href="class_data_logger.html#ab6f4c7b34caade6d45d89406a506c6db">DataLogger</a>
 , <a class="el" href="class_launch_detector.html#aef791f059ce8bfef5781cea465354093">LaunchDetector</a>
@@ -162,6 +174,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>clear()
 : <a class="el" href="class_circular_buffer.html#acef199d78df0e0d0ee3996ad251ad90c">CircularBuffer&lt; T, S, IT &gt;</a>
+</li>
+<li>createBuzzer()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_buzzer_factory.html#ac624d62a8e172cb90c0c2a5cddec98a4">Wocket::Hardware::BuzzerFactory</a>
 </li>
 </ul>
 
@@ -196,7 +211,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#a97da20a9dfb41635d6cc81c7cedfdfea">Wocket::Sensor::SensorBase</a>
 </li>
 <li>getAltitudeReading()
-: <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#aa7a1abd463a7ad3fbb10053bc276ed82">Wocket::Sensor::BarometerBase</a>
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html#a46f0e193ef6338e9943aa352bf1c12f1">Wocket::Hardware::HardwareBase</a>
+, <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#aa7a1abd463a7ad3fbb10053bc276ed82">Wocket::Sensor::BarometerBase</a>
 , <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#a29dca8cda49791ca43329281d79b94fe">Wocket::Sensor::SensorBase</a>
 </li>
 <li>getAveragePressureReading()
@@ -206,39 +222,56 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_wocket_1_1_hardware_1_1_battery.html#a934b5233e5e8bd5c36b3355c302a2638">Wocket::Hardware::Battery</a>
 </li>
 <li>getCapabilities()
-: <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a556adb634fd923fadad267b0bb04ec4b">Wocket::Sensor::BarometerBase</a>
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html#a97005746e6561ee4744eab4dd9260b03">Wocket::Hardware::HardwareBase</a>
+, <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a556adb634fd923fadad267b0bb04ec4b">Wocket::Sensor::BarometerBase</a>
 , <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#a46da597ef0fa5893d72bf818975f26d2">Wocket::Sensor::SensorBase</a>
 </li>
 <li>getEndPosition()
-: <a class="el" href="class_servo_motor.html#ad03fe2b401081c12ee7e7d87997a217f">ServoMotor</a>
+: <a class="el" href="class_servo_motor.html#a90f38bdc94be95beb06c23fe511178ca">ServoMotor</a>
 , <a class="el" href="class_servos.html#a8a1feb556b24ff4f7fdc40b1f2a8d3e1">Servos</a>
 </li>
 <li>getHumidityReading()
-: <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a0a74b6724eb7c79ab159b959a01cccf7">Wocket::Sensor::BarometerBase</a>
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html#a3085f5f33329a96e45c1b58799157077">Wocket::Hardware::HardwareBase</a>
+, <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a0a74b6724eb7c79ab159b959a01cccf7">Wocket::Sensor::BarometerBase</a>
 , <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#a66c65cb4d238f2cf5c37df16df0ee855">Wocket::Sensor::SensorBase</a>
 </li>
 <li>getId()
-: <a class="el" href="class_servo_motor.html#a18eb85fb5a989d38ee68e6fd8c5ad8f5">ServoMotor</a>
+: <a class="el" href="class_servo_motor.html#afe2f88df61625ba8548f3f2986b3a028">ServoMotor</a>
 , <a class="el" href="class_servos.html#ac2cae3aae2de2a283e004afeb69fca8e">Servos</a>
 </li>
 <li>getNewLogFilename()
 : <a class="el" href="class_data_logger.html#a1d7dfb8f3a116b923b1caa89a20f1741">DataLogger</a>
 </li>
 <li>getPin()
-: <a class="el" href="class_servo_motor.html#a0df9111138eefa24797b7e97f589b47d">ServoMotor</a>
+: <a class="el" href="class_servo_motor.html#aadc602ce7eda54824cd01ee5d1adcab8">ServoMotor</a>
 , <a class="el" href="class_servos.html#a91875847f76847bf2728956e3f999992">Servos</a>
 </li>
 <li>getPressureReading()
-: <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a22f71f29641bfcf0932879b6af81a8be">Wocket::Sensor::BarometerBase</a>
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html#a586dbe0049f897e2fbec0b300755dd3e">Wocket::Hardware::HardwareBase</a>
+, <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a22f71f29641bfcf0932879b6af81a8be">Wocket::Sensor::BarometerBase</a>
 , <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#a2dd05c7ed307cd51fb23f8a31bd598e2">Wocket::Sensor::SensorBase</a>
 </li>
+<li>getReading()
+: <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html#aa5abeed63e3e1a67e5abbdd3f6a1900e">Wocket::Sensor::SensorPackage</a>
+</li>
 <li>getStartPosition()
-: <a class="el" href="class_servo_motor.html#a73401ac153ebf72be9b2dc844dfe6495">ServoMotor</a>
+: <a class="el" href="class_servo_motor.html#a4307ba81203585e3ad3f8582f43be29e">ServoMotor</a>
 , <a class="el" href="class_servos.html#a42ffcfa6de4dd99fd9f022c0afa51fb8">Servos</a>
 </li>
 <li>getTemperatureReading()
-: <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a98b22cc2c80d604965dee120403640f4">Wocket::Sensor::BarometerBase</a>
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html#a30182e8f1e5b32d449d2fb104de72d7a">Wocket::Hardware::HardwareBase</a>
+, <a class="el" href="class_wocket_1_1_sensor_1_1_barometer_base.html#a98b22cc2c80d604965dee120403640f4">Wocket::Sensor::BarometerBase</a>
 , <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#a85a98f573fcb03cdfd8da363969df20d">Wocket::Sensor::SensorBase</a>
+</li>
+<li>getValue()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_e_e_p_r_o_m.html#a04a89e44fe7e700a05d7bf6ad24fc5c1">Wocket::Hardware::EEPROM</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>humidity
+: <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html#a160fd9097a59b15c1cddc2fc723b1a53">Wocket::Sensor::SensorData</a>
 </li>
 </ul>
 
@@ -273,10 +306,17 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>launchDetected()
 : <a class="el" href="class_launch_detector.html#a46c520c98a5646293abf75a6af803e0c">LaunchDetector</a>
 </li>
+<li>LOW_BATTERY_VOLTAGE_THRESHOLD
+: <a class="el" href="struct_pinout.html#a999dd6806e850ce7d6386e1ab618cb22">Pinout</a>
+, <a class="el" href="class_rockit.html#a0bb6074d29dd19e371598af4e93c40ff">Rockit</a>
+</li>
 </ul>
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>MAX_ADC_RESOLTUION
+: <a class="el" href="class_rockit.html#ae6ad5fcf374d61bdf907fe3808161531">Rockit</a>
+</li>
 <li>moveToEndPosition()
 : <a class="el" href="class_servo_motor.html#ab27fdd9a94b88219c0ed6fc91300be07">ServoMotor</a>
 , <a class="el" href="class_servos.html#a0f43c701353d730a30618a512746d0d1">Servos</a>
@@ -302,14 +342,18 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>PIEZO_BUZZER
 : <a class="el" href="struct_pinout.html#ab402a430d6b79b4a01b48c2ce711c1c1">Pinout</a>
 </li>
-<li>pinout
-: <a class="el" href="class_hardware_abstraction_layer.html#a34a5a0742b6ea37445d08a269adb0748">HardwareAbstractionLayer</a>
-</li>
 <li>Pinout()
 : <a class="el" href="struct_pinout.html#a3d5e67f164b9b3e3509dacac467cdab7">Pinout</a>
 </li>
+<li>pinout
+: <a class="el" href="class_platform.html#a37447de572c30f5cdeb2375a9137ea8e">Platform</a>
+, <a class="el" href="class_rockit.html#a89f2c4d8e9fc79b45d4804745c5a193e">Rockit</a>
+</li>
 <li>pop()
 : <a class="el" href="class_circular_buffer.html#aa3ba52b2ff9af891659c57a6b78da575">CircularBuffer&lt; T, S, IT &gt;</a>
+</li>
+<li>pressure
+: <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html#a3f7c5fd2175556b86d678509a5855405">Wocket::Sensor::SensorData</a>
 </li>
 <li>push()
 : <a class="el" href="class_circular_buffer.html#a0b18f285fe95646b0c665d5ab31d9116">CircularBuffer&lt; T, S, IT &gt;</a>
@@ -318,12 +362,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>SensorPackage::getReading()
-: <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ad2f599f8bdaa6915d5365338c831bea1">Wocket::Sensor::SensorPackage</a>
-</li>
 <li>sensors
-: <a class="el" href="class_hardware_abstraction_layer.html#acf35b1420387ace13789787dbe79dc64">HardwareAbstractionLayer</a>
-, <a class="el" href="class_rockit.html#a1099da820a9bf7472d1dd1312601802d">Rockit</a>
+: <a class="el" href="class_platform.html#a93f8090c0bbddf1999fa8457e6272967">Platform</a>
+, <a class="el" href="class_rockit.html#a74c6ca7ee60fe25536d255b43c81b3be">Rockit</a>
 </li>
 <li>setEndPosition()
 : <a class="el" href="class_servo_motor.html#a3d9c005da54a4b68b131e0835479684b">ServoMotor</a>
@@ -339,6 +380,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>setStartPosition()
 : <a class="el" href="class_servo_motor.html#a44e90a81eff4d6f61b775faef182403a">ServoMotor</a>
 , <a class="el" href="class_servos.html#a049804805f452586adb470d30b056b23">Servos</a>
+</li>
+<li>setValue()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_e_e_p_r_o_m.html#a9faad3247dd95025ab57a5d07bd6e729">Wocket::Hardware::EEPROM</a>
 </li>
 <li>shift()
 : <a class="el" href="class_circular_buffer.html#a4b2b472aad3740665d3d3962aeeb81f3">CircularBuffer&lt; T, S, IT &gt;</a>
@@ -357,6 +401,21 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>SPI_TX
 : <a class="el" href="struct_pinout.html#a962e4d22f48ee9de59d64b694c5503eb">Pinout</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>temperature
+: <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html#a488bfe4a6b7b5296f19b7785afdc7d86">Wocket::Sensor::SensorData</a>
+</li>
+<li>turnOff()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_buzzer_base.html#a2cc44ac6a12f6f2ace5a39d512b11042">Wocket::Hardware::BuzzerBase</a>
+, <a class="el" href="class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer.html#a64368ed71a1811a7090848ad744b4bff">Wocket::Platform::Arduino::ArduinoBuzzer</a>
+</li>
+<li>turnOn()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_buzzer_base.html#a5211205da416b2a70a8ba7a968956152">Wocket::Hardware::BuzzerBase</a>
+, <a class="el" href="class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer.html#a53c02022e196fdbb97164b307e34363f">Wocket::Platform::Arduino::ArduinoBuzzer</a>
 </li>
 </ul>
 
@@ -385,7 +444,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_x"></a>- x -</h3><ul>
 <li>x
 : <a class="el" href="struct_wocket_1_1_sensor_1_1_acceleration.html#a2b77982146f595233c7ee6b24c7b225f">Wocket::Sensor::Acceleration</a>
-, <a class="el" href="struct_wocket_acceleration_data.html#a503a2ff0f1fb3c76bc2d329e05ba43d0">WocketAccelerationData</a>
 </li>
 </ul>
 
@@ -393,7 +451,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_y"></a>- y -</h3><ul>
 <li>y
 : <a class="el" href="struct_wocket_1_1_sensor_1_1_acceleration.html#a4babef7219341c576c6ce91b396d07a2">Wocket::Sensor::Acceleration</a>
-, <a class="el" href="struct_wocket_acceleration_data.html#a0c850adb73bcfd004ffc02cf99c7bbfc">WocketAccelerationData</a>
 </li>
 </ul>
 
@@ -401,12 +458,14 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_z"></a>- z -</h3><ul>
 <li>z
 : <a class="el" href="struct_wocket_1_1_sensor_1_1_acceleration.html#a68714b627a3d30e4526abcb5b1d0e7ab">Wocket::Sensor::Acceleration</a>
-, <a class="el" href="struct_wocket_acceleration_data.html#a5eb0fa8985797996d53b51d2a023e185">WocketAccelerationData</a>
 </li>
 </ul>
 
 
 <h3><a id="index__7E"></a>- ~ -</h3><ul>
+<li>~HardwareBase()
+: <a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html#a86df775ae72458211caf7e10e93c88a2">Wocket::Hardware::HardwareBase</a>
+</li>
 <li>~SensorBase()
 : <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html#af38b2b0e047cb4f0304fc4c204c420fa">Wocket::Sensor::SensorBase</a>
 </li>

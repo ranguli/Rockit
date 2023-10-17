@@ -20,6 +20,7 @@ var _main_8cpp =
     [ "n", "_main_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240", null ],
     [ "p", "_main_8cpp.html#a533391314665d6bf1b5575e9a9cd8552", null ],
     [ "r", "_main_8cpp.html#acab531abaa74a7e664e3986f2522b33a", null ],
+    [ "sensorPackage", "_main_8cpp.html#a5671775a072cec546093f4db374f0393", null ],
     [ "t1", "_main_8cpp.html#a6c0fff4963c235af7663c1e10160e6cb", null ],
     [ "t4", "_main_8cpp.html#ac6a49fff92742647e9557837d7e9cbf8", null ],
     [ "tconfig", "_main_8cpp.html#a44e6565e6af6259fe13b3856e80cc538", null ],

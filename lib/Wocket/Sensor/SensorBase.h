@@ -3,10 +3,12 @@
 #include <optional>
 #include <bitset>
 
+#include "SensorData.h"
+
 namespace Wocket {
 namespace Sensor {
 
-enum class WocketSensorCapability {
+enum class SensorCapability {
     CAPABILITY_ACCELERATION = 1 << 0,
     CAPABILITY_PRESSURE = 1 << 1,
     CAPABILITY_TEMPERATURE = 1 << 2,
@@ -23,11 +25,11 @@ public:
 
     virtual WocketCapabilityFlags getCapabilities() const = 0;
 
-    virtual std::optional<AccelerationData> getAccelerationReading() const;
-    virtual std::optional<float> getPressureReading() const;
-    virtual std::optional<float> getTemperatureReading() const;
-    virtual std::optional<float> getHumidityReading() const;
-    virtual std::optional<float> getAltitudeReading() const;
+    virtual std::optional<Wocket::Sensor::SensorData> getAccelerationReading() const;
+    virtual std::optional<Wocket::Sensor::SensorData> getPressureReading() const;
+    virtual std::optional<Wocket::Sensor::SensorData> getTemperatureReading() const;
+    virtual std::optional<Wocket::Sensor::SensorData> getHumidityReading() const;
+    virtual std::optional<Wocket::Sensor::SensorData> getAltitudeReading() const;
 };
 
 }

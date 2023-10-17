@@ -1,7 +1,12 @@
 <map id="Rockit.h" name="Rockit.h">
-<area shape="rect" id="node1" title=" " alt="" coords="191,5,266,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,143,107"/>
-<area shape="rect" id="node3" href="$_wocket_pinout_8h.html" title=" " alt="" coords="167,80,290,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="314,80,493,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="195,155,262,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="183,5,258,32"/>
+<area shape="rect" id="node2" href="$_platform_8h.html" title=" " alt="" coords="93,80,183,107"/>
+<area shape="rect" id="node4" href="$_sensor_package_8h.html" title=" " alt="" coords="143,155,274,181"/>
+<area shape="rect" id="node9" href="$_pinout_8h.html" title=" " alt="" coords="282,80,357,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,119,181"/>
+<area shape="rect" id="node5" href="$_sensor_base_8h.html" title=" " alt="" coords="153,229,264,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="81,304,155,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="179,304,238,331"/>
+<area shape="rect" id="node8" href="$_sensor_data_8h.html" title=" " alt="" coords="262,304,371,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="298,155,365,181"/>
 </map>

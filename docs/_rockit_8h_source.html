@@ -122,36 +122,48 @@ $(document).ready(function(){initNavTree('_rockit_8h_source.html',''); initResiz
 <div class="contents">
 <a href="_rockit_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;WocketPlatform.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_wocket_pinout_8h.html">WocketPinout.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;WocketSensorPackage.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_platform_8h.html">Platform.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_pinout_8h.html">Pinout.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sensor_package_8h.html">SensorPackage.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_rockit_8h.html#a16160fa8356a11b5c7675a0e677d51af">    7</a></span>&#160;<span class="preprocessor">#define USE_ADXL343</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_rockit_8h.html#ad020067baf5ea340ad0c67178a030161">    8</a></span>&#160;<span class="preprocessor">#define USE_MS5637</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_rockit.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rockit.html">Rockit</a> : <span class="keyword">public</span> WocketPlatform {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_rockit.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rockit.html">Rockit</a> : <span class="keyword">public</span> <a class="code" href="class_platform.html">Platform</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_rockit.html#a1099da820a9bf7472d1dd1312601802d">   13</a></span>&#160;    WocketSensorPackage <a class="code" href="class_rockit.html#a1099da820a9bf7472d1dd1312601802d">sensors</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_rockit.html#a74c6ca7ee60fe25536d255b43c81b3be">   13</a></span>&#160;    SensorPackage <a class="code" href="class_rockit.html#a74c6ca7ee60fe25536d255b43c81b3be">sensors</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    WocketPinout pinout {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        .SPI_RX = 20,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_rockit.html#a89f2c4d8e9fc79b45d4804745c5a193e">   15</a></span>&#160;    <a class="code" href="struct_pinout.html">Pinout</a> <a class="code" href="class_rockit.html#a89f2c4d8e9fc79b45d4804745c5a193e">pinout</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        .<a class="code" href="struct_pinout.html#ad9216f18acb587bf7a4dddbe5e377ed9">SPI_RX</a> = 20,</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        .SPI_TX = 19,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        .SPI_SCK = 18,</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        .SPI_CS = 17,</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        .I2C_SDA = 10,</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        .PIEZO_BUZZER = 12</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="ttc" id="a_wocket_pinout_8h_html"><div class="ttname"><a href="_wocket_pinout_8h.html">WocketPinout.h</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        .BATTERY_PIN = 29;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_rockit.html#a0bb6074d29dd19e371598af4e93c40ff">   25</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_rockit.html#a0bb6074d29dd19e371598af4e93c40ff">LOW_BATTERY_VOLTAGE_THRESHOLD</a> = 3.8;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_rockit.html#ae6ad5fcf374d61bdf907fe3808161531">   26</a></span>&#160;    <span class="keyword">const</span> uint8_t <a class="code" href="class_rockit.html#ae6ad5fcf374d61bdf907fe3808161531">MAX_ADC_RESOLTUION</a> = 12;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="ttc" id="a_pinout_8h_html"><div class="ttname"><a href="_pinout_8h.html">Pinout.h</a></div></div>
+<div class="ttc" id="a_platform_8h_html"><div class="ttname"><a href="_platform_8h.html">Platform.h</a></div></div>
+<div class="ttc" id="a_sensor_package_8h_html"><div class="ttname"><a href="_sensor_package_8h.html">SensorPackage.h</a></div></div>
+<div class="ttc" id="aclass_platform_html"><div class="ttname"><a href="class_platform.html">Platform</a></div><div class="ttdef"><b>Definition:</b> Platform.h:6</div></div>
 <div class="ttc" id="aclass_rockit_html"><div class="ttname"><a href="class_rockit.html">Rockit</a></div><div class="ttdef"><b>Definition:</b> Rockit.h:10</div></div>
-<div class="ttc" id="aclass_rockit_html_a1099da820a9bf7472d1dd1312601802d"><div class="ttname"><a href="class_rockit.html#a1099da820a9bf7472d1dd1312601802d">Rockit::sensors</a></div><div class="ttdeci">WocketSensorPackage sensors</div><div class="ttdef"><b>Definition:</b> Rockit.h:13</div></div>
+<div class="ttc" id="aclass_rockit_html_a0bb6074d29dd19e371598af4e93c40ff"><div class="ttname"><a href="class_rockit.html#a0bb6074d29dd19e371598af4e93c40ff">Rockit::LOW_BATTERY_VOLTAGE_THRESHOLD</a></div><div class="ttdeci">const float LOW_BATTERY_VOLTAGE_THRESHOLD</div><div class="ttdef"><b>Definition:</b> Rockit.h:25</div></div>
+<div class="ttc" id="aclass_rockit_html_a74c6ca7ee60fe25536d255b43c81b3be"><div class="ttname"><a href="class_rockit.html#a74c6ca7ee60fe25536d255b43c81b3be">Rockit::sensors</a></div><div class="ttdeci">SensorPackage sensors</div><div class="ttdef"><b>Definition:</b> Rockit.h:13</div></div>
+<div class="ttc" id="aclass_rockit_html_a89f2c4d8e9fc79b45d4804745c5a193e"><div class="ttname"><a href="class_rockit.html#a89f2c4d8e9fc79b45d4804745c5a193e">Rockit::pinout</a></div><div class="ttdeci">Pinout pinout</div><div class="ttdef"><b>Definition:</b> Rockit.h:15</div></div>
+<div class="ttc" id="aclass_rockit_html_ae6ad5fcf374d61bdf907fe3808161531"><div class="ttname"><a href="class_rockit.html#ae6ad5fcf374d61bdf907fe3808161531">Rockit::MAX_ADC_RESOLTUION</a></div><div class="ttdeci">const uint8_t MAX_ADC_RESOLTUION</div><div class="ttdef"><b>Definition:</b> Rockit.h:26</div></div>
+<div class="ttc" id="astruct_pinout_html"><div class="ttname"><a href="struct_pinout.html">Pinout</a></div><div class="ttdef"><b>Definition:</b> Pinout.h:5</div></div>
+<div class="ttc" id="astruct_pinout_html_ad9216f18acb587bf7a4dddbe5e377ed9"><div class="ttname"><a href="struct_pinout.html#ad9216f18acb587bf7a4dddbe5e377ed9">Pinout::SPI_RX</a></div><div class="ttdeci">const uint8_t SPI_RX</div><div class="ttdef"><b>Definition:</b> Pinout.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_2c3e26c67e8926144e9dab970917e9f6.html">platform</a></li><li class="navelem"><a class="el" href="dir_839e96a54f01756292ac927100835634.html">src</a></li><li class="navelem"><a class="el" href="_rockit_8h.html">Rockit.h</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_660fa42b9e3230345806bc0b6602f61f.html">Wocket</a></li><li class="navelem"><a class="el" href="dir_adfc8f0c7b158e7578b58661775dac5f.html">Platform</a></li><li class="navelem"><a class="el" href="_rockit_8h.html">Rockit.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

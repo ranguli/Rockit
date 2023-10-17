@@ -117,7 +117,9 @@ $(document).ready(function(){initNavTree('namespace_wocket_1_1_hardware.html',''
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Wocket::Hardware Namespace Reference</div>  </div>
 </div><!--header-->
@@ -127,7 +129,112 @@ $(document).ready(function(){initNavTree('namespace_wocket_1_1_hardware.html',''
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_hardware_1_1_battery.html">Battery</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_hardware_1_1_buzzer_base.html">BuzzerBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_hardware_1_1_buzzer_factory.html">BuzzerFactory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_hardware_1_1_e_e_p_r_o_m.html">EEPROM</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_hardware_1_1_hardware_base.html">HardwareBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for a hardware component such as an LED, piezo buzzer, servo motor, etc.  <a href="class_wocket_1_1_hardware_1_1_hardware_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_hardware_1_1_hardware_package.html">HardwarePackage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class representing a suite of multiple hardware components, such as buzzers, LEDS, etc.  <a href="class_wocket_1_1_hardware_1_1_hardware_package.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a359fa8854fc431d86efc1147fb3ed988"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_wocket_1_1_hardware.html#a359fa8854fc431d86efc1147fb3ed988">HardwareCapabilityFlags</a> = std::bitset&lt; 32 &gt;</td></tr>
+<tr class="separator:a359fa8854fc431d86efc1147fb3ed988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adc2740e21ed21c64237987212a7411db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411db">EEPROM_ADDRESSES</a> { <br />
+&#160;&#160;<a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dbaa53314d3d4095cbb18c4dc61862a1c92">ADDRESS_AUTO_FLIGHT_MODE_DEPLOY_TIME_MS</a>
+, <a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dba9efd09e7e4312ce447a2f7ef51fbcb05">ADDRESS_TIMER_FLIGHT_MODE_DEPLOY_TIME_MS</a>
+, <a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dba957f79e0273f5ebba48f7fe5cfb9f0bd">ADDRESS_SERVO_1_START_POSITION</a>
+, <a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dba64df463159b6895974cb13ffb3e471cc">ADDRESS_SERVO_1_END_POSITION</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dba8c5044f04d0a3c77ab634b58ea13e86a">ADDRESS_SERVO_2_START_POSITION</a>
+, <a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dba84d583c4d29270c44a17e9e6c6ef8462">ADDRESS_SERVO_2_END_POSITION</a>
+, <a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dba7e48caa863ae8ea9d34a1a7cc851e15c">ADDRESS_SERVO_2_DEPLOY_TIME_MS</a>
+<br />
+ }</td></tr>
+<tr class="separator:adc2740e21ed21c64237987212a7411db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aee6ba0dd37cfcde97230b57abe0041"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_wocket_1_1_hardware.html#a6aee6ba0dd37cfcde97230b57abe0041">HardwareCapability</a> { <a class="el" href="namespace_wocket_1_1_hardware.html#a6aee6ba0dd37cfcde97230b57abe0041aa619e9d46bc5c0550dfa85d2a6993561">CAPABILITY_STATUS_LED</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespace_wocket_1_1_hardware.html#a6aee6ba0dd37cfcde97230b57abe0041a7af287b873c71703665efcd8840dbbc1">CAPABILITY_BATTERY_LED</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespace_wocket_1_1_hardware.html#a6aee6ba0dd37cfcde97230b57abe0041aec13f6f1010469f6da3561f93a8547e0">CAPABILITY_PIEZO_BUZZER</a> = 1 &lt;&lt; 2
+, <a class="el" href="namespace_wocket_1_1_hardware.html#a6aee6ba0dd37cfcde97230b57abe0041a47e5ee57c5f325774b55d7fb098b7fe5">CAPABILITY_SERVO</a> = 1 &lt;&lt; 3
+ }</td></tr>
+<tr class="separator:a6aee6ba0dd37cfcde97230b57abe0041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a359fa8854fc431d86efc1147fb3ed988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359fa8854fc431d86efc1147fb3ed988">&#9670;&nbsp;</a></span>HardwareCapabilityFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_wocket_1_1_hardware.html#a359fa8854fc431d86efc1147fb3ed988">Wocket::Hardware::HardwareCapabilityFlags</a> = typedef std::bitset&lt;32&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="adc2740e21ed21c64237987212a7411db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2740e21ed21c64237987212a7411db">&#9670;&nbsp;</a></span>EEPROM_ADDRESSES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411db">Wocket::Hardware::EEPROM_ADDRESSES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dbaa53314d3d4095cbb18c4dc61862a1c92"></a>ADDRESS_AUTO_FLIGHT_MODE_DEPLOY_TIME_MS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dba9efd09e7e4312ce447a2f7ef51fbcb05"></a>ADDRESS_TIMER_FLIGHT_MODE_DEPLOY_TIME_MS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dba957f79e0273f5ebba48f7fe5cfb9f0bd"></a>ADDRESS_SERVO_1_START_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dba64df463159b6895974cb13ffb3e471cc"></a>ADDRESS_SERVO_1_END_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dba8c5044f04d0a3c77ab634b58ea13e86a"></a>ADDRESS_SERVO_2_START_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dba84d583c4d29270c44a17e9e6c6ef8462"></a>ADDRESS_SERVO_2_END_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adc2740e21ed21c64237987212a7411dba7e48caa863ae8ea9d34a1a7cc851e15c"></a>ADDRESS_SERVO_2_DEPLOY_TIME_MS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6aee6ba0dd37cfcde97230b57abe0041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aee6ba0dd37cfcde97230b57abe0041">&#9670;&nbsp;</a></span>HardwareCapability</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_wocket_1_1_hardware.html#a6aee6ba0dd37cfcde97230b57abe0041">Wocket::Hardware::HardwareCapability</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6aee6ba0dd37cfcde97230b57abe0041aa619e9d46bc5c0550dfa85d2a6993561"></a>CAPABILITY_STATUS_LED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6aee6ba0dd37cfcde97230b57abe0041a7af287b873c71703665efcd8840dbbc1"></a>CAPABILITY_BATTERY_LED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6aee6ba0dd37cfcde97230b57abe0041aec13f6f1010469f6da3561f93a8547e0"></a>CAPABILITY_PIEZO_BUZZER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6aee6ba0dd37cfcde97230b57abe0041a47e5ee57c5f325774b55d7fb098b7fe5"></a>CAPABILITY_SERVO&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

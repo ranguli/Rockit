@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['r_482',['r',['../_main_8cpp.html#acab531abaa74a7e664e3986f2522b33a',1,'Main.cpp']]],
-  ['r_483',['R',['../_kalman_filter_8cpp.html#a247aeeed35717bee85fc2540c3591fd3',1,'R():&#160;KalmanFilter.cpp'],['../_kalman_filter_8h.html#a247aeeed35717bee85fc2540c3591fd3',1,'R():&#160;KalmanFilter.cpp']]],
-  ['rotary_5fswitch_5fpins_484',['ROTARY_SWITCH_PINS',['../_rotary_switch_8cpp.html#a8e8b3b0d2e0a20e2e3f1c8200b2db5ad',1,'RotarySwitch.cpp']]],
-  ['rotvalue_485',['rotValue',['../_rotary_switch_8cpp.html#ab66bdd6b97799ad65bad4a29aeca696f',1,'RotarySwitch.cpp']]]
+  ['q_524',['Q',['../_kalman_filter_8cpp.html#a21becd30ddde5888b88eb91cf3ba8b6d',1,'Q():&#160;KalmanFilter.cpp'],['../_kalman_filter_8h.html#a21becd30ddde5888b88eb91cf3ba8b6d',1,'Q():&#160;KalmanFilter.cpp']]]
 ];

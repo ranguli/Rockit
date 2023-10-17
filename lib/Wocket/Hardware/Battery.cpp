@@ -5,13 +5,10 @@
 
 using namespace Wocket::Hardware;
 
-const int BATTERY_PIN = 29;
-const float LOW_BATTERY_VOLTAGE_THRESHOLD = 3.8;
-
 float Battery::getBatteryVoltage() {
 
   // Take a reading of the battery voltage.
-  int reading = analogRead(BATTERY_PIN);
+  int reading = analogRead(this->batteryPin);
 
   // A voltage divider appears to be present in the circuit, so our reading is 
   // only half the real value.
@@ -24,7 +21,7 @@ float Battery::getBatteryVoltage() {
 }
 
 bool Battery::isLowBattery() {
-  if (getBatteryVoltage() < LOW_BATTERY_VOLTAGE_THRESHOLD) {
+  if (getBatteryVoltage() < this->lowBatteryThreshold) {
     return true;
   }
   return false;

@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('struct_pinout.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_hardware_abstraction_layer_8h_source.html">HardwareAbstractionLayer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_pinout_8h_source.html">Pinout.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -144,7 +144,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a697d5370c05bf7799212b2a6fdc6530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab402a430d6b79b4a01b48c2ce711c1c1"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pinout.html#ab402a430d6b79b4a01b48c2ce711c1c1">PIEZO_BUZZER</a></td></tr>
 <tr class="separator:ab402a430d6b79b4a01b48c2ce711c1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a11a9e480bd178c5931cc1083fb767f"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pinout.html#a0a11a9e480bd178c5931cc1083fb767f">I2C_SDA</a></td></tr>
+<tr class="memitem:ae9e6576a50c1cb0078d9fdf18ab8888c"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pinout.html#ae9e6576a50c1cb0078d9fdf18ab8888c">BATTERY_PIN</a></td></tr>
+<tr class="separator:ae9e6576a50c1cb0078d9fdf18ab8888c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999dd6806e850ce7d6386e1ab618cb22"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pinout.html#a999dd6806e850ce7d6386e1ab618cb22">LOW_BATTERY_VOLTAGE_THRESHOLD</a> = 29</td></tr>
+<tr class="separator:a999dd6806e850ce7d6386e1ab618cb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a11a9e480bd178c5931cc1083fb767f"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pinout.html#a0a11a9e480bd178c5931cc1083fb767f">I2C_SDA</a> = 3.8</td></tr>
 <tr class="separator:a0a11a9e480bd178c5931cc1083fb767f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -209,6 +213,20 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae9e6576a50c1cb0078d9fdf18ab8888c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e6576a50c1cb0078d9fdf18ab8888c">&#9670;&nbsp;</a></span>BATTERY_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t Pinout::BATTERY_PIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0a11a9e480bd178c5931cc1083fb767f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a11a9e480bd178c5931cc1083fb767f">&#9670;&nbsp;</a></span>I2C_SDA</h2>
 
@@ -216,7 +234,21 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t Pinout::I2C_SDA</td>
+          <td class="memname">const uint8_t Pinout::I2C_SDA = 3.8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a999dd6806e850ce7d6386e1ab618cb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999dd6806e850ce7d6386e1ab618cb22">&#9670;&nbsp;</a></span>LOW_BATTERY_VOLTAGE_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Pinout::LOW_BATTERY_VOLTAGE_THRESHOLD = 29</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,7 +326,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_hardware_abstraction_layer_8h_source.html">HardwareAbstractionLayer.h</a></li>
+<li><a class="el" href="_pinout_8h_source.html">Pinout.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

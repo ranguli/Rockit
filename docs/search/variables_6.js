@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['i2c_5fsda_460',['I2C_SDA',['../struct_pinout.html#a0a11a9e480bd178c5931cc1083fb767f',1,'Pinout']]],
-  ['initvar_461',['initVar',['../_state_8cpp.html#a91b1cff1c27c8211fb62da8a2c56bb31',1,'initVar():&#160;State.cpp'],['../_state_8h.html#a91b1cff1c27c8211fb62da8a2c56bb31',1,'initVar():&#160;State.cpp']]]
+  ['humidity_500',['humidity',['../struct_wocket_1_1_sensor_1_1_sensor_data.html#a160fd9097a59b15c1cddc2fc723b1a53',1,'Wocket::Sensor::SensorData']]]
 ];

@@ -11,7 +11,6 @@
 #include "DataLogger.h"
 #include "KalmanFilter.h"
 
-#include "Pins.h"
 #include "LEDs.h"
 #include "Battery.h"
 #include "ServoMotor.h"
@@ -57,6 +56,8 @@ LaunchDetector launchDetector;
 // Create a Logger object, and log file.
 DataLogger logger;
 File logfile;
+
+Wocket::Sensor::SensorPackage sensorPackage = new Wocket::Sensor::SensorPackage();
 
 void setup() {
   //Serial.begin(9600); //For debugging purposes only

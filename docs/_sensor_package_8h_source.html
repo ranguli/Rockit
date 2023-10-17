@@ -124,26 +124,24 @@ $(document).ready(function(){initNavTree('_sensor_package_8h_source.html',''); i
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sensor_base_8h.html">SensorBase.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_wocket.html">Wocket</a> {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Sensor {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// SensorPackage that contains and manages multiple sensors</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_wocket_1_1_sensor_1_1_sensor_package.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_wocket_1_1_sensor_1_1_sensor_package.html">SensorPackage</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::vector&lt;std::unique_ptr&lt;SensorBase&gt;&gt; sensors;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Method to add sensors</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ae922f2a824d06dd9ef8fd6a87a049777">addSensor</a>(std::unique_ptr&lt;SensorBase&gt; sensor);</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ad2f599f8bdaa6915d5365338c831bea1">   15</a></span>&#160;    std::optional&lt;SensorData&gt; <a class="code" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ad2f599f8bdaa6915d5365338c831bea1">SensorPackage::getReading</a>(SensorCapability capability) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_wocket_1_1_sensor.html">Wocket::Sensor</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_wocket_1_1_sensor_1_1_sensor_package.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_wocket_1_1_sensor_1_1_sensor_package.html">SensorPackage</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    std::vector&lt;std::unique_ptr&lt;SensorBase&gt;&gt; sensors;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ae922f2a824d06dd9ef8fd6a87a049777">addSensor</a>(std::unique_ptr&lt;SensorBase&gt; sensor);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::optional&lt;SensorData&gt; <a class="code" href="class_wocket_1_1_sensor_1_1_sensor_package.html#aa5abeed63e3e1a67e5abbdd3f6a1900e">getReading</a>(<a class="code" href="namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9d">SensorCapability</a> capability) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="ttc" id="a_sensor_base_8h_html"><div class="ttname"><a href="_sensor_base_8h.html">SensorBase.h</a></div></div>
-<div class="ttc" id="aclass_wocket_1_1_sensor_1_1_sensor_package_html"><div class="ttname"><a href="class_wocket_1_1_sensor_1_1_sensor_package.html">Wocket::Sensor::SensorPackage</a></div><div class="ttdef"><b>Definition:</b> SensorPackage.h:9</div></div>
-<div class="ttc" id="aclass_wocket_1_1_sensor_1_1_sensor_package_html_ad2f599f8bdaa6915d5365338c831bea1"><div class="ttname"><a href="class_wocket_1_1_sensor_1_1_sensor_package.html#ad2f599f8bdaa6915d5365338c831bea1">Wocket::Sensor::SensorPackage::getReading</a></div><div class="ttdeci">std::optional&lt; SensorData &gt; SensorPackage::getReading(SensorCapability capability) const</div></div>
+<div class="ttc" id="aclass_wocket_1_1_sensor_1_1_sensor_package_html"><div class="ttname"><a href="class_wocket_1_1_sensor_1_1_sensor_package.html">Wocket::Sensor::SensorPackage</a></div><div class="ttdef"><b>Definition:</b> SensorPackage.h:7</div></div>
+<div class="ttc" id="aclass_wocket_1_1_sensor_1_1_sensor_package_html_aa5abeed63e3e1a67e5abbdd3f6a1900e"><div class="ttname"><a href="class_wocket_1_1_sensor_1_1_sensor_package.html#aa5abeed63e3e1a67e5abbdd3f6a1900e">Wocket::Sensor::SensorPackage::getReading</a></div><div class="ttdeci">std::optional&lt; SensorData &gt; getReading(SensorCapability capability) const</div><div class="ttdef"><b>Definition:</b> SensorPackage.cpp:11</div></div>
 <div class="ttc" id="aclass_wocket_1_1_sensor_1_1_sensor_package_html_ae922f2a824d06dd9ef8fd6a87a049777"><div class="ttname"><a href="class_wocket_1_1_sensor_1_1_sensor_package.html#ae922f2a824d06dd9ef8fd6a87a049777">Wocket::Sensor::SensorPackage::addSensor</a></div><div class="ttdeci">void addSensor(std::unique_ptr&lt; SensorBase &gt; sensor)</div><div class="ttdef"><b>Definition:</b> SensorPackage.cpp:7</div></div>
-<div class="ttc" id="anamespace_wocket_html"><div class="ttname"><a href="namespace_wocket.html">Wocket</a></div><div class="ttdef"><b>Definition:</b> Battery.h:3</div></div>
+<div class="ttc" id="anamespace_wocket_1_1_sensor_html"><div class="ttname"><a href="namespace_wocket_1_1_sensor.html">Wocket::Sensor</a></div><div class="ttdef"><b>Definition:</b> AccelerometerBase.h:10</div></div>
+<div class="ttc" id="anamespace_wocket_1_1_sensor_html_ac428f184e7b09fd0fa20a3b1300dbb9d"><div class="ttname"><a href="namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9d">Wocket::Sensor::SensorCapability</a></div><div class="ttdeci">SensorCapability</div><div class="ttdef"><b>Definition:</b> SensorBase.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

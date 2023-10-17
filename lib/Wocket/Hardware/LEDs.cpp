@@ -1,7 +1,6 @@
 #include <Arduino.h>
 
 #include "LEDs.h"
-#include "Pins.h"
 
 const int BATTERY_LED_PIN = 2;  // Battery indicator LED
 const int STATUS_LED_PIN = 26;  // Status LED, used to indicate errors to the user

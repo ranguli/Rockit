@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('class_wocket_1_1_sensor_1_1_sensor_pac
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae922f2a824d06dd9ef8fd6a87a049777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ae922f2a824d06dd9ef8fd6a87a049777">addSensor</a> (std::unique_ptr&lt; <a class="el" href="class_wocket_1_1_sensor_1_1_sensor_base.html">SensorBase</a> &gt; sensor)</td></tr>
 <tr class="separator:ae922f2a824d06dd9ef8fd6a87a049777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2f599f8bdaa6915d5365338c831bea1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html">SensorData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html#ad2f599f8bdaa6915d5365338c831bea1">SensorPackage::getReading</a> (SensorCapability capability) const</td></tr>
-<tr class="separator:ad2f599f8bdaa6915d5365338c831bea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5abeed63e3e1a67e5abbdd3f6a1900e"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html">SensorData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wocket_1_1_sensor_1_1_sensor_package.html#aa5abeed63e3e1a67e5abbdd3f6a1900e">getReading</a> (<a class="el" href="namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9d">SensorCapability</a> capability) const</td></tr>
+<tr class="separator:aa5abeed63e3e1a67e5abbdd3f6a1900e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae922f2a824d06dd9ef8fd6a87a049777"></a>
@@ -149,24 +149,37 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Add a new sensor to the sensor package. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ad2f599f8bdaa6915d5365338c831bea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f599f8bdaa6915d5365338c831bea1">&#9670;&nbsp;</a></span>SensorPackage::getReading()</h2>
+<a id="aa5abeed63e3e1a67e5abbdd3f6a1900e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5abeed63e3e1a67e5abbdd3f6a1900e">&#9670;&nbsp;</a></span>getReading()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt;<a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html">SensorData</a>&gt; Wocket::Sensor::SensorPackage::SensorPackage::getReading </td>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_wocket_1_1_sensor_1_1_sensor_data.html">SensorData</a> &gt; SensorPackage::getReading </td>
           <td>(</td>
-          <td class="paramtype">SensorCapability&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_wocket_1_1_sensor.html#ac428f184e7b09fd0fa20a3b1300dbb9d">SensorCapability</a>&#160;</td>
           <td class="paramname"><em>capability</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Queries all sensors in the package that have a given capability, and returns their readings. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capability</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Optionally returns data from any capable sensors. </dd></dl>
 
 </div>
 </div>

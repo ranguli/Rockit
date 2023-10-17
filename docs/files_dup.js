@@ -1,8 +1,6 @@
 var files_dup =
 [
-    [ "AccelerationData.h", "_acceleration_data_8h.html", [
-      [ "WocketAccelerationData", "struct_wocket_acceleration_data.html", "struct_wocket_acceleration_data" ]
-    ] ],
+    [ "AccelerationData.h", "_acceleration_data_8h.html", null ],
     [ "AccelerometerBase.cpp", "_accelerometer_base_8cpp.html", null ],
     [ "AccelerometerBase.h", "_accelerometer_base_8h.html", [
       [ "AccelerometerBase", "class_wocket_1_1_sensor_1_1_accelerometer_base.html", "class_wocket_1_1_sensor_1_1_accelerometer_base" ]
@@ -14,16 +12,27 @@ var files_dup =
     [ "ADXL343.h", "_a_d_x_l343_8h.html", [
       [ "ADXL343", "class_wocket_1_1_sensor_1_1_a_d_x_l343.html", "class_wocket_1_1_sensor_1_1_a_d_x_l343" ]
     ] ],
+    [ "ArduinoBuzzer.cpp", "_arduino_buzzer_8cpp.html", null ],
+    [ "ArduinoBuzzer.h", "_arduino_buzzer_8h.html", [
+      [ "ArduinoBuzzer", "class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer.html", "class_wocket_1_1_platform_1_1_arduino_1_1_arduino_buzzer" ]
+    ] ],
     [ "BarometerBase.cpp", "_barometer_base_8cpp.html", null ],
     [ "BarometerBase.h", "_barometer_base_8h.html", [
       [ "BarometerBase", "class_wocket_1_1_sensor_1_1_barometer_base.html", "class_wocket_1_1_sensor_1_1_barometer_base" ]
     ] ],
-    [ "Battery.cpp", "_battery_8cpp.html", "_battery_8cpp" ],
+    [ "BarometerConfig.h", "_barometer_config_8h.html", [
+      [ "WocketBarometerConfig", "struct_wocket_barometer_config.html", "struct_wocket_barometer_config" ]
+    ] ],
+    [ "Battery.cpp", "_battery_8cpp.html", null ],
     [ "Battery.h", "_battery_8h.html", [
       [ "Battery", "class_wocket_1_1_hardware_1_1_battery.html", "class_wocket_1_1_hardware_1_1_battery" ]
     ] ],
-    [ "BeepAndBlink.cpp", "_beep_and_blink_8cpp.html", "_beep_and_blink_8cpp" ],
-    [ "BeepAndBlink.h", "_beep_and_blink_8h.html", "_beep_and_blink_8h" ],
+    [ "BuzzerBase.h", "_buzzer_base_8h.html", [
+      [ "BuzzerBase", "class_wocket_1_1_hardware_1_1_buzzer_base.html", "class_wocket_1_1_hardware_1_1_buzzer_base" ]
+    ] ],
+    [ "BuzzerFactory.h", "_buzzer_factory_8h.html", [
+      [ "BuzzerFactory", "class_wocket_1_1_hardware_1_1_buzzer_factory.html", "class_wocket_1_1_hardware_1_1_buzzer_factory" ]
+    ] ],
     [ "CircularBuffer.h", "_circular_buffer_8h.html", [
       [ "CircularBuffer", "class_circular_buffer.html", "class_circular_buffer" ]
     ] ],
@@ -32,12 +41,17 @@ var files_dup =
     [ "DataLogger.h", "_data_logger_8h.html", [
       [ "DataLogger", "class_data_logger.html", "class_data_logger" ]
     ] ],
+    [ "EEPROM.cpp", "_e_e_p_r_o_m_8cpp.html", null ],
+    [ "EEPROM.h", "_e_e_p_r_o_m_8h.html", "_e_e_p_r_o_m_8h" ],
     [ "Error.cpp", "_error_8cpp.html", "_error_8cpp" ],
     [ "Error.h", "_error_8h.html", "_error_8h" ],
     [ "FlightComputer.cpp", "_flight_computer_8cpp.html", null ],
-    [ "HardwareAbstractionLayer.h", "_hardware_abstraction_layer_8h.html", [
-      [ "Pinout", "struct_pinout.html", "struct_pinout" ],
-      [ "HardwareAbstractionLayer", "class_hardware_abstraction_layer.html", "class_hardware_abstraction_layer" ]
+    [ "FlightComputer.h", "_flight_computer_8h.html", null ],
+    [ "HardwareBase.cpp", "_hardware_base_8cpp.html", null ],
+    [ "HardwareBase.h", "_hardware_base_8h.html", "_hardware_base_8h" ],
+    [ "HardwarePackage.cpp", "_hardware_package_8cpp.html", null ],
+    [ "HardwarePackage.h", "_hardware_package_8h.html", [
+      [ "HardwarePackage", "class_wocket_1_1_hardware_1_1_hardware_package.html", "class_wocket_1_1_hardware_1_1_hardware_package" ]
     ] ],
     [ "KalmanFilter.cpp", "_kalman_filter_8cpp.html", "_kalman_filter_8cpp" ],
     [ "KalmanFilter.h", "_kalman_filter_8h.html", "_kalman_filter_8h" ],
@@ -48,10 +62,16 @@ var files_dup =
     [ "LEDs.cpp", "_l_e_ds_8cpp.html", "_l_e_ds_8cpp" ],
     [ "LEDs.h", "_l_e_ds_8h.html", "_l_e_ds_8h" ],
     [ "Main.cpp", "_main_8cpp.html", "_main_8cpp" ],
-    [ "PiezoBuzzer.cpp", "_piezo_buzzer_8cpp.html", "_piezo_buzzer_8cpp" ],
-    [ "PiezoBuzzer.h", "_piezo_buzzer_8h.html", "_piezo_buzzer_8h" ],
+    [ "MS5637.cpp", "_m_s5637_8cpp.html", null ],
+    [ "MS5637.h", "_m_s5637_8h.html", null ],
+    [ "Pinout.h", "_pinout_8h.html", [
+      [ "Pinout", "struct_pinout.html", "struct_pinout" ]
+    ] ],
     [ "Pins.cpp", "_pins_8cpp.html", "_pins_8cpp" ],
     [ "Pins.h", "_pins_8h.html", "_pins_8h" ],
+    [ "Platform.h", "_platform_8h.html", [
+      [ "Platform", "class_platform.html", "class_platform" ]
+    ] ],
     [ "PreLaunchStage.cpp", "_pre_launch_stage_8cpp.html", "_pre_launch_stage_8cpp" ],
     [ "PreLaunchStage.h", "_pre_launch_stage_8h.html", "_pre_launch_stage_8h" ],
     [ "RecoveryStage.cpp", "_recovery_stage_8cpp.html", "_recovery_stage_8cpp" ],
@@ -70,20 +90,11 @@ var files_dup =
     [ "SensorPackage.h", "_sensor_package_8h.html", [
       [ "SensorPackage", "class_wocket_1_1_sensor_1_1_sensor_package.html", "class_wocket_1_1_sensor_1_1_sensor_package" ]
     ] ],
-    [ "ServoMotor.cpp", "_servo_motor_8cpp.html", [
-      [ "ServoMotor", "class_servo_motor.html", "class_servo_motor" ]
-    ] ],
+    [ "ServoMotor.cpp", "_servo_motor_8cpp.html", null ],
     [ "ServoMotor.h", "_servo_motor_8h.html", "_servo_motor_8h" ],
     [ "Servos.h", "_servos_8h.html", [
       [ "Servos", "class_servos.html", "class_servos" ]
     ] ],
     [ "State.cpp", "_state_8cpp.html", "_state_8cpp" ],
-    [ "State.h", "_state_8h.html", "_state_8h" ],
-    [ "WocketBarometerConfig.h", "_wocket_barometer_config_8h.html", [
-      [ "WocketBarometerConfig", "struct_wocket_barometer_config.html", "struct_wocket_barometer_config" ]
-    ] ],
-    [ "WocketBarometricPressureData.h", "_wocket_barometric_pressure_data_8h.html", null ],
-    [ "WocketMS5637.cpp", "_wocket_m_s5637_8cpp.html", null ],
-    [ "WocketMS5637.h", "_wocket_m_s5637_8h.html", null ],
-    [ "WocketPinout.h", "_wocket_pinout_8h.html", null ]
+    [ "State.h", "_state_8h.html", "_state_8h" ]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['n_471',['n',['../_main_8cpp.html#a76f11d9a0a47b94f72c2d0e77fb32240',1,'Main.cpp']]]
+  ['max_5fadc_5fresoltuion_511',['MAX_ADC_RESOLTUION',['../class_rockit.html#ae6ad5fcf374d61bdf907fe3808161531',1,'Rockit']]],
+  ['max_5fadc_5fresolution_512',['MAX_ADC_RESOLUTION',['../_config_8h.html#a3bc99aeace4b2bed3a0afaf470af26c2',1,'Config.h']]]
 ];

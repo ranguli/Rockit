@@ -6,10 +6,6 @@ var _config_8h =
     [ "PIEZO_BUZZER_FREQUENCY", "_config_8h.html#a3d26c27b621f1f78132d4ffa2de61a20", null ],
     [ "PIEZO_BUZZER_PIN", "_config_8h.html#a399e51d6b82b2110f782455882c42e62", null ],
     [ "PIN_I2C_SCL", "_config_8h.html#a6b5cc0023af0923f5e57d107bdd8f985", null ],
-    [ "PIN_SPI_CS", "_config_8h.html#a47d478b7b724108734ce356a48daff5c", null ],
-    [ "PIN_SPI_RX", "_config_8h.html#ad5aa5e9fe468ab72e77ee2de77ecda1e", null ],
-    [ "PIN_SPI_SCK", "_config_8h.html#a704e2660aedb97382a6503160b27d968", null ],
-    [ "PIN_SPI_TX", "_config_8h.html#afab8624ca6fcf8e0517fbd8d46b18d32", null ],
     [ "SERVO_0_PIN", "_config_8h.html#ae68f3d97e44f8f8ebc45dc9b05c10e83", null ],
     [ "SERVO_1_PIN", "_config_8h.html#a5d1d168b0c8c9c400a7ff16fba5f4a42", null ],
     [ "SERVO_CURRENT_SPIKE_DELAY_MS", "_config_8h.html#a2b5180fff8240d28e8c23bdda1c2f0c1", null ],
@@ -36,6 +32,5 @@ var _config_8h =
     [ "LAUNCH_ALTITUDE_THRESHOLD", "_config_8h.html#a1b4f2652583c2d5a0905fdeb521f3e28", null ],
     [ "LOW_BATTERY_VOLTAGE_THRESHOLD", "_config_8h.html#a5e76d5f01d23f485f7bd0acacb13b6c0", null ],
     [ "MAX_ADC_RESOLUTION", "_config_8h.html#a3bc99aeace4b2bed3a0afaf470af26c2", null ],
-    [ "PRESSURE_ALTITUDE_EXPONENT", "_config_8h.html#add6fa77cad60e7e1f5d8491783beb564", null ],
-    [ "sensorPackage", "_config_8h.html#a5671775a072cec546093f4db374f0393", null ]
+    [ "PRESSURE_ALTITUDE_EXPONENT", "_config_8h.html#add6fa77cad60e7e1f5d8491783beb564", null ]
 ];

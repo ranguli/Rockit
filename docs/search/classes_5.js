@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['launchdetector_283',['LaunchDetector',['../class_launch_detector.html',1,'']]]
+  ['hardwarebase_309',['HardwareBase',['../class_wocket_1_1_hardware_1_1_hardware_base.html',1,'Wocket::Hardware']]],
+  ['hardwarepackage_310',['HardwarePackage',['../class_wocket_1_1_hardware_1_1_hardware_package.html',1,'Wocket::Hardware']]]
 ];

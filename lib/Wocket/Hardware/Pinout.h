@@ -9,6 +9,9 @@ struct Pinout {
     const uint8_t SPI_CS;
     const uint8_t PIEZO_BUZZER;
 
+    const uint8_t BATTERY_PIN; = 29;
+    const float LOW_BATTERY_VOLTAGE_THRESHOLD; = 3.8;
+
     const uint8_t I2C_SDA;
 
     Pinout(int spi_rx, int spi_tx, int spi_sck, int spi_cs, uint8_t i2c_sda, int piezo_buzzer) 

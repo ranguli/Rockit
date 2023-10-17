@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pinout_284',['Pinout',['../struct_pinout.html',1,'']]]
+  ['launchdetector_311',['LaunchDetector',['../class_launch_detector.html',1,'']]]
 ];

@@ -56,11 +56,6 @@ extern const float ADC_REFERENCE_VOLTAGE;
 #define SERVO_DELAY_MS 499
 #define SERVO_CURRENT_SPIKE_DELAY_MS 99
 
-// SPI
-#define PIN_SPI_RX 20
-#define PIN_SPI_TX 19
-#define PIN_SPI_SCK 18
-#define PIN_SPI_CS 17
 
 #define PIEZO_BUZZER_PIN 12
 #define PIEZO_BUZZER_DUTY_CYCLE 50
@@ -120,9 +115,7 @@ enum EEPROM_ADDRESSES {
   ADDRESS_SERVO_2_START_POSITION,
   ADDRESS_SERVO_2_END_POSITION,
   ADDRESS_SERVO_2_DEPLOY_TIME_MS
-}; 
-
-Wocket::Sensor::SensorPackage sensorPackage = new Wocket::Sensor::SensorPackage();
+};
 
 #ifdef USE_ADXL343
     #include "ADXL343.h"

@@ -1,12 +1,10 @@
 <map id="Pins.cpp" name="Pins.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="168,5,244,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="208,5,284,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,89,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="113,80,168,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="321,229,385,256"/>
-<area shape="rect" id="node5" href="$_servo_motor_8h.html" title=" " alt="" coords="244,80,352,107"/>
-<area shape="rect" id="node7" href="$_config_8h.html" title=" " alt="" coords="386,80,461,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="244,155,315,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="390,155,457,181"/>
-<area shape="rect" id="node9" href="$_accelerometer_config_8h.html" title=" " alt="" coords="481,155,651,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="675,155,819,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="306,155,370,181"/>
+<area shape="rect" id="node5" href="$_servo_motor_8h.html" title=" " alt="" coords="192,80,300,107"/>
+<area shape="rect" id="node7" href="$_config_8h.html" title=" " alt="" coords="375,80,450,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="211,155,281,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="394,155,461,181"/>
 </map>

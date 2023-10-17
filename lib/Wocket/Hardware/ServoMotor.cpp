@@ -1,70 +1,61 @@
 #include "Servos.h"
+#include "ServoMotor.h"
 
-class ServoMotor {
-private:
-    Servo servo;             
-    int pin;           
-    int id;                  
-    int startPosition;       
-    int endPosition;
-    
-public:
-    void begin(int pin, int id, int startPosition, int endPosition) {
-        this->pin = pin;
-        this->id = id;
-        this->startPosition = startPosition;
-        this->endPosition = endPosition;
-    }
+void ServoMotor::begin(int pin, int id, int startPosition, int endPosition) {
+    this->pin = pin;
+    this->id = id;
+    this->startPosition = startPosition;
+    this->endPosition = endPosition;
+}
 
-    int getStartPosition() const {
-        return startPosition;
-    }
+int ServoMotor::getStartPosition() const {
+    return startPosition;
+}
 
-    void setStartPosition(int newStart) {
-        startPosition = newStart;
-    }
+void ServoMotor::setStartPosition(int newStart) {
+    startPosition = newStart;
+}
 
-    // Method to move the servo to its start position
-    void moveToStartPosition() {
-        servo.write(startPosition);
-    }
+// Method to move the servo to its start position
+void ServoMotor::moveToStartPosition() {
+    servo.write(startPosition);
+}
 
-    int getEndPosition() const {
-        return endPosition;
-    }
+int ServoMotor::getEndPosition() const {
+    return endPosition;
+}
 
-    void setEndPosition(int newEnd) {
-        endPosition = newEnd;
-    }
+void ServoMotor::setEndPosition(int newEnd) {
+    endPosition = newEnd;
+}
 
-    // Method to move the servo to its end position
-    void moveToEndPosition() {
-        servo.write(endPosition);
-    }
+// Method to move the servo to its end position
+void ServoMotor::moveToEndPosition() {
+    servo.write(endPosition);
+}
 
-    // Getter methods for class members if needed
-    int getPin() const {
-        return pin;
-    }
+// Getter methods for class members if needed
+int ServoMotor::getPin() const {
+    return pin;
+}
 
-    int getId() const {
-        return id;
-    }
+int ServoMotor::getId() const {
+    return id;
+}
 
-    // Setter methods if needed
-    void setId(int newId) {
-        id = newId;
-    }
+// Setter methods if needed
+void ServoMotor::setId(int newId) {
+    id = newId;
+}
 
-    bool isAttached() {
-      return attached;
-    }
+bool ServoMotor::isAttached() {
+    return attached;
+}
 
-    void attach() {
-      servo.attach();
-    }
+void ServoMotor::attach() {
+    servo.attach();
+}
 
-    void detach() {
-      servo.detach();
-    }
-};
+void ServoMotor::detach() {
+    servo.detach();
+}

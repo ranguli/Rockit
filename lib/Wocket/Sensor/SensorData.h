@@ -11,6 +11,10 @@ struct Acceleration {
 
 struct SensorData {
     Acceleration acceleration;
+    float temperature;
+    float pressure;
+    float humidity;
+    float altitude;
 };
 
 }
