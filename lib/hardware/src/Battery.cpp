@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-#include "Constants.h"
+#include "../../../Config.h"
 #include "LEDs.h"
 
 const int BATTERY_PIN = 29;

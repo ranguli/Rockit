@@ -1,12 +1,5 @@
 #include "Servos.h"
 
-//Servos
-const int SERVO_1_PIN = 28;
-const int SERVO_2_PIN = 27;
-const int SERVO_POWER_SAVING_TIMEOUT_MS = 2000;
-const int SERVO_DELAY_MS = 500;
-const int SERVO_CURRENT_SPIKE_DELAY_MS = 100;
-
 class ServoMotor {
 private:
     Servo servo;             

@@ -2,7 +2,7 @@
 #define WOCKET_ACCELEROMETER_H
 
 #include "AccelerometerConfig.h"
-#include "../../SensorData/AccelerationData.h"
+#include "AccelerationData.h"
 
 class Accelerometer {
 public:

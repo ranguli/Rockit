@@ -1,7 +1,7 @@
 #ifndef WOCKET_BAROMETER_H
 #define WOCKET_BAROMETER_H
 
-#include "../Sensor.h"
+#include "Sensor.h"
 
 class Barometer : public Sensor {
 private:

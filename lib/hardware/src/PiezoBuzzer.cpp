@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "../Config.h"
+#include "../../Config.h"
 #include "PiezoBuzzer.h"
 
 void setupPiezoBuzzer() {

@@ -2,13 +2,10 @@
 #include <SPI.h>
 #include <Wire.h>
 
-#include "Contstants.h"
 #include "ServoMotor.h"
-
+#include "Config.h"
 
 void setupPins() {
-  setupI2CPins();
-  setupSPIPins();
   setupServoPins();
 }
 

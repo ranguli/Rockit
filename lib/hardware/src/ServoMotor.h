@@ -3,15 +3,6 @@
 
 #include <Servo.h>
 
-extern const int SERVO_1_PIN;
-extern const int SERVO_2_PIN;
-extern const int SERVO_POWER_SAVING_TIMEOUT_MS;
-extern const int SERVO_DELAY_MS;
-
-// To prevent a current spike from moving both servos simulataneously, 
-// we wait inbetween moving the 1st and 2nd servo motor.
-extern const int SERVO_CURRENT_SPIKE_DELAY_MS;
-
 class ServoMotor {
 private:
     Servo servo;             

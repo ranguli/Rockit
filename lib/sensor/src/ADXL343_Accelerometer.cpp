@@ -3,7 +3,7 @@
 #include <Adafruit_ADXL343.h>
 #include "ADXL343_Accelerometer.h"
 
-#include "../../SensorData/AccelerationData.h"
+#include "AccelerationData.h"
 
 ADXL343_Accelerometer::ADXL343_Accelerometer(const AccelerometerConfig& config) 
 : sensor(config.uid, config.wire) {}

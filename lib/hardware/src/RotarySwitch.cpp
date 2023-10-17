@@ -2,11 +2,11 @@
 #include <EEPROM.h>
 #include "pico/stdlib.h"
 
-#include "Pins.h"
-#include "State.h"
-#include "LEDs.h"
+#include "../../../Pins.h"
+#include "../../../State.h"
+#include "../../../LEDs.h"
 #include "ServoMotor.h"
-#include "Constants.h"
+#include "Config.h"
 
 static byte previousValue;  //Variable for storing the previous switch possition
 
