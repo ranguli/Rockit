@@ -1,4 +1,13 @@
-void recovery(){
+#include <Arduino.h>
+#include <EEPROM.h>
+#include <Servo.h>
+
+#include "globals.h"
+#include "recovery.h"
+
+void recovery(Servo servo1, Servo servo2){
+  static int tconfig;
+  static int n = 0;
 
   if (timer == true && t1 >= (1000*EEPROM.read(1)+908)){ //Here the 908 ms correspond to the time covered by the circular buffer
     servo1.write(EEPROM.read(3)); //Move servo1 to the final position EEPROM.read(3);
@@ -20,7 +29,7 @@ void recovery(){
   }
   
   else if (automatic == true){
-    if ((filteredAltitudeDelta - altold) < -0.01){
+    if ((filteredAltitudeDelta - altOld) < -0.01){
       n++;      
       if (n == 4 && deploy == false){
         deploy = true;
@@ -28,7 +37,7 @@ void recovery(){
       }
     }
       
-    else if ((filteredAltitudeDelta - altold) >= 0 && deploy == false){
+    else if ((filteredAltitudeDelta - altOld) >= 0 && deploy == false){
       n = 0;
     }
     

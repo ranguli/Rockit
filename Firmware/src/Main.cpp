@@ -31,87 +31,38 @@
 // Now the flight computer can rotate a servo 180 degrees (not yet tested).
 
 #include <Wire.h>
-#include "SparkFun_MS5637_Arduino_Library.h"
-#include <Adafruit_Sensor.h>
-#include <Adafruit_ADXL343.h>
 #include <SPI.h>
 #include <SD.h>
 #include <Servo.h>
 #include <EEPROM.h>
-#include <CircularBuffer.h>
-#include "pico/stdlib.h"
 
+#include "globals.h"
+
+#include "SparkFun_MS5637_Arduino_Library.h"
+#include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL343.h>
+
+#include "beepnblink.h"
+#include "recovery.h"
+#include "kalmanFilter.h"
+#include "batteryStatus.h"
+#include "rotSwitch.h"
+#include "preLaunch.h"
+#include "SDstartup.h"
+
+CircularBuffer <long,100> times;
 CircularBuffer <float,100> FilteredAltitudes;
 CircularBuffer <float,100> altitudes;
 CircularBuffer <float,100> accelerations;
-CircularBuffer <long,100> times;
 
-//Initialization of Kalman Variables
-float R = 0.3; //R = measurement noise covariance. Larger R means large measurement uncertainty
-float Q = 0.3*1e-2;  //Q = process noise covariance. Larger Q means larger estimation uncertainty. Thus increasing Q corrects more
-double Xpe0;  // Xpe0 = prior estimation of signal X at time t=0 (current state)
-double Xe1;  //Xe1 = estimation of X at time t=1 (previous state)
-double Ppe0;  //Ppe0 = prior estimation of "error covariance" at t=0
-double P1,P0; //P1 = error covariance at t=1, P0 = error covariance at t=0
-double K, Xe0, Z; //K = Kalman gain, Xe0 = estimation of signal at t=0, Z = measured signal at t=0
-
-//Physical magnitudes
-float altold; //Baseline pressure
-int altMax; //Rounded maximum altitude
-int altMaxDig[4] = {}; //Max altitude digits
-int rmnd; //Dummy variable remainder
-int dvsr; //Dummy variable for beeping/flasing the altitude
-float temp;
-float currentPressure;
-float altitudeDelta;
-float altThreshold = 10; //Altitude threshold for launchd detection in meters
-float accelThreshold = 2.0; //Acceleration threshold for launch detection in gs.
-float filteredAltitudeDelta;
-float rocketAccel;
-float startingPressure = 0.0;
-
-//Definition of time and auxiliary integers
-int tconfig, n, q, p = 0, r = 0;
-int deltat; //Time step of every loop iteration
-long int t1; //Time variables
-long int t4, tout = 300000; //Here tout is the timeout variable tout = 300000 equals 5 min of data logging time
-
-/* Assign a unique ID to this sensor at the same time */
-Adafruit_ADXL343 accel = Adafruit_ADXL343(12345, &Wire1);
-
-char filename[] = "00.CSV"; //Dummy file name to store flight data.
-
-//Config. rotary switch. This configuration is for the real-coded rotary switch
-byte switchPins[4] = {15, 13, 14, 16}; //Digital pins assigned to the rotary switch
-byte rotValue = B0000; // Variable for printing value over serial debug
-byte switchPos; // Variable for storing the current switch possition
-byte previousValue; //Variable for storing the previous switch possition
-
-//Boolean variables defining the state of the program
-bool initVar = true;
-bool launchCondition1 = false;
-bool launchCondition2 = false;
-bool deploy = false;
-bool automatic = false;
-bool timer = false;
-bool overtime = false;
-bool piezoEnable = true;
-
-//LEDs
-int batLED = 2; //Battery indicator LED
-int statusLED = 26; //Status LED
-
-//Servos
-int servo1pin = 28;
-int servo2pin = 27;
-
-//Piezo
-int piezo = 12;
-
-MS5637 barometricSensor; //Creates a barometricSensor object
-File dataFile; //Creates a dataFile object
 Servo servo1; //Creates a servo1 object
 Servo servo2; //Creates a servo2 object
+
+File dataFile; //Creates a dataFile object
+MS5637 barometricSensor; //Creates a barometricSensor object
+
+/* Assign a unique ID to this sensor at the same time */
+Adafruit_ADXL343 accelerometer = Adafruit_ADXL343(12345, &Wire1);
 
 void setup() {
   //Serial.begin(9600); //For debugging purposes only
@@ -149,23 +100,26 @@ void setup() {
     startingPressure += barometricSensor.getPressure();
   startingPressure /= (float)16;
 
-  accel.begin();
-  accel.setRange(ADXL343_RANGE_16_G);
-  accel.setDataRate(ADXL343_DATARATE_400_HZ);
-  switchStartup();
+  accelerometer.begin();
+  accelerometer.setRange(ADXL343_RANGE_16_G);
+  accelerometer.setDataRate(ADXL343_DATARATE_400_HZ);
+  switchStartup(servo1, servo2);
   delay(10000); //Wait for 10 seconds to allow the rocketeer to prepare for launch before the flight computer is armed.
-  preLaunch(); //Here I store the first second of data into the circular buffers
-  SDstartup();
+  //preLaunch(barometricSensor, accelerometer, times); //Here I store the first second of data into the circular buffers
+  preLaunch(barometricSensor, accelerometer, times, altitudes, accelerations, FilteredAltitudes);
+
+  dataFile = SDstartup();
 }
 
 void loop() {
   batteryStatus(); //Check the battery level
+  static int q = 0;
   
   if (overtime == false){
     currentPressure = barometricSensor.getPressure();
     temp = barometricSensor.getTemperature();
     sensors_event_t event;
-    accel.getEvent(&event);
+    accelerometer.getEvent(&event);
     rocketAccel = -((event.acceleration.y/9.81)-(event.acceleration.x/9.81))/sqrt(2);
     altitudeDelta = barometricSensor.altitudeChange(currentPressure, startingPressure);
     filteredAltitudeDelta = kalmanFilter(altitudeDelta);
@@ -215,7 +169,7 @@ void loop() {
 
     else if (initVar == false){
       t1 = millis() - t4 - times[0];
-      recovery();  
+      recovery(servo1, servo2);  
       dataFile.print(t1);
       dataFile.print(',');
       dataFile.print(altitudeDelta);
@@ -228,9 +182,9 @@ void loop() {
       dataFile.print(',');
       dataFile.println(temp, 1);
 
-      if (altitudeDelta > altold){ //Here is where I store the maximum altitude value
+      if (altitudeDelta > altOld){ //Here is where I store the maximum altitude value
         altMax = round(altitudeDelta);
-        altold = altMax;
+        altOld = altMax;
       }
   
       if (r == 200 && overtime == false){ //Here I set the rate at which I send data to the uSD card

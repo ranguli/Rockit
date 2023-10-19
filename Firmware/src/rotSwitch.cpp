@@ -1,3 +1,11 @@
+#include <Arduino.h>
+#include <EEPROM.h>
+#include "pico/stdlib.h"
+#include <Servo.h>
+
+#include "globals.h"
+#include "beepnblink.h"
+
 // This program reads the rotary switch.
 
 void readRotSwitch(){
@@ -11,7 +19,10 @@ void readRotSwitch(){
  }
 }
 
-void switchStartup(){
+void switchStartup(Servo servo1, Servo servo2){
+  // Variable for storing the previous switch possition
+  static byte previousValue;
+
     readRotSwitch();
 
   if (rotValue == 10){ //A Automatic mode

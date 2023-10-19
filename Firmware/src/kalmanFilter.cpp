@@ -1,3 +1,5 @@
+#include "globals.h"
+
 // This program performs a Kalman filter of the flight data. It smoothens the data and ignores transitory events.
 
 // Q = process noise covariance
@@ -8,13 +10,19 @@
 // P1 = error covariance at t=1, P0 = error covariance at t=0
 // K = Kalman gain, Xe0 = estimation of signal at t=0, Z = measured signal at t=0;
 
+const float R = 0.3; //R = measurement noise covariance. Larger R means large measurement uncertainty
+const float Q = 0.3*1e-2;  //Q = process noise covariance. Larger Q means larger estimation uncertainty. Thus increasing Q corrects more
+
 float kalmanFilter(float Z){
-    Xpe0 = Xe1; // Assumption of prediction 1
-    Ppe0 = P1 + Q; // Update of prior estimation of "error covariance"
-    K = Ppe0/(Ppe0 + R); // Measurement update or correction of "Kalman gain"
-    Xe0 = Xpe0 + K * (Z - Xpe0); // Measurement update or correction of "estimated signal"
-    P0 = (1 - K) * Ppe0; // Measurement update or correction of "error covariance";
+    static float Xe1 = 0.0;
+    static float P1 = 0.0; 
+
+    float Xpe0 = Xe1;
+    float Ppe0 = P1 + Q;
+    float K = Ppe0/(Ppe0 + R);
+    float Xe0 = Xpe0 + K * (Z - Xpe0); 
+    float P0 = (1 - K) * Ppe0;
     Xe1 = Xe0;
     P1 = P0;
-  return Xe0;
+    return Xe0;
 }

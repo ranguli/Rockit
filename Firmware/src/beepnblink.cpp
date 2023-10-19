@@ -1,3 +1,8 @@
+#include <Arduino.h>
+
+#include "globals.h"
+#include "beepnblink.h"
+
 void beepnblink(){
   if (initVar == true && overtime == false){
 
@@ -43,6 +48,8 @@ void beepnblink(){
 }
 
 void altToDigits(){ //Convert altitude to digits
+  int rmnd; //Dummy variable remainder
+
   for (int i=0; i<4; i++){
     rmnd = altMax % 10; //This is the remainder
     altMaxDig[i] = rmnd;
