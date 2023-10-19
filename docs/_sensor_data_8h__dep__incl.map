@@ -1,16 +1,16 @@
 <map id="SensorData.h" name="SensorData.h">
-<area shape="rect" id="node1" title=" " alt="" coords="817,5,927,32"/>
-<area shape="rect" id="node2" href="$_sensor_base_8h.html" title=" " alt="" coords="741,80,851,107"/>
-<area shape="rect" id="node14" href="$_sensor_package_8cpp.html" title=" " alt="" coords="973,229,1120,256"/>
-<area shape="rect" id="node3" href="$_hardware_package_8h.html" title=" " alt="" coords="147,155,298,181"/>
-<area shape="rect" id="node5" href="$_barometer_base_8h.html" title=" " alt="" coords="405,155,539,181"/>
-<area shape="rect" id="node9" href="$_accelerometer_base_8h.html" title=" " alt="" coords="617,155,778,181"/>
-<area shape="rect" id="node11" href="$_sensor_package_8h.html" title=" " alt="" coords="816,155,947,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="816,5,925,32"/>
+<area shape="rect" id="node2" href="$_sensor_base_8h.html" title=" " alt="" coords="739,80,850,107"/>
+<area shape="rect" id="node14" href="$_sensor_package_8cpp.html" title=" " alt="" coords="972,229,1119,256"/>
+<area shape="rect" id="node3" href="$_hardware_package_8h.html" title=" " alt="" coords="138,155,289,181"/>
+<area shape="rect" id="node5" href="$_barometer_base_8h.html" title=" " alt="" coords="367,155,502,181"/>
+<area shape="rect" id="node9" href="$_accelerometer_base_8h.html" title=" " alt="" coords="615,155,777,181"/>
+<area shape="rect" id="node11" href="$_sensor_package_8h.html" title=" " alt="" coords="815,155,945,181"/>
 <area shape="rect" id="node4" href="$_hardware_package_8cpp.html" title=" " alt="" coords="5,229,171,256"/>
-<area shape="rect" id="node6" href="$_barometer_base_8cpp.html" title=" " alt="" coords="195,229,346,256"/>
-<area shape="rect" id="node7" href="$_m_s5637_8cpp.html" title=" " alt="" coords="371,229,472,256"/>
-<area shape="rect" id="node8" href="$_m_s5637_8h.html" title=" " alt="" coords="497,229,583,256"/>
-<area shape="rect" id="node10" href="$_accelerometer_base_8cpp.html" title=" " alt="" coords="608,229,784,256"/>
-<area shape="rect" id="node12" href="$_platform_8h.html" title=" " alt="" coords="808,229,899,256"/>
-<area shape="rect" id="node13" href="$_rockit_8h.html" title=" " alt="" coords="857,304,932,331"/>
+<area shape="rect" id="node6" href="$_m_s5637_8cpp.html" title=" " alt="" coords="195,229,296,256"/>
+<area shape="rect" id="node7" href="$_m_s5637_8h.html" title=" " alt="" coords="321,229,407,256"/>
+<area shape="rect" id="node8" href="$_barometer_base_8cpp.html" title=" " alt="" coords="431,229,582,256"/>
+<area shape="rect" id="node10" href="$_accelerometer_base_8cpp.html" title=" " alt="" coords="607,229,783,256"/>
+<area shape="rect" id="node12" href="$_platform_8h.html" title=" " alt="" coords="807,229,897,256"/>
+<area shape="rect" id="node13" href="$_rockit_8h.html" title=" " alt="" coords="856,304,931,331"/>
 </map>

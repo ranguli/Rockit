@@ -1,8 +1,6 @@
+#pragma once
 #include <Arduino.h>
 #include <SD.h>
-
-#ifndef ROCKIT_DATALOGGER_H
-#define ROCKIT_DATALOGGER_H
 
 class DataLogger {
 private:
@@ -13,7 +11,4 @@ public:
     void begin();
     String getNewLogFilename();
     File open(String filename);
-
 };
-
-#endif // ROCKIT_DATALOGGER_H

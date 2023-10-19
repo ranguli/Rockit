@@ -6,6 +6,7 @@ var namespace_wocket_1_1_hardware =
     [ "EEPROM", "class_wocket_1_1_hardware_1_1_e_e_p_r_o_m.html", "class_wocket_1_1_hardware_1_1_e_e_p_r_o_m" ],
     [ "HardwareBase", "class_wocket_1_1_hardware_1_1_hardware_base.html", "class_wocket_1_1_hardware_1_1_hardware_base" ],
     [ "HardwarePackage", "class_wocket_1_1_hardware_1_1_hardware_package.html", "class_wocket_1_1_hardware_1_1_hardware_package" ],
+    [ "Pinout", "struct_wocket_1_1_hardware_1_1_pinout.html", "struct_wocket_1_1_hardware_1_1_pinout" ],
     [ "HardwareCapabilityFlags", "namespace_wocket_1_1_hardware.html#a359fa8854fc431d86efc1147fb3ed988", null ],
     [ "EEPROM_ADDRESSES", "namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411db", [
       [ "ADDRESS_AUTO_FLIGHT_MODE_DEPLOY_TIME_MS", "namespace_wocket_1_1_hardware.html#adc2740e21ed21c64237987212a7411dbaa53314d3d4095cbb18c4dc61862a1c92", null ],

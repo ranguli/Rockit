@@ -14,7 +14,7 @@ var hierarchy =
     [ "Wocket::Hardware::HardwareBase", "class_wocket_1_1_hardware_1_1_hardware_base.html", null ],
     [ "Wocket::Hardware::HardwarePackage", "class_wocket_1_1_hardware_1_1_hardware_package.html", null ],
     [ "LaunchDetector", "class_launch_detector.html", null ],
-    [ "Pinout", "struct_pinout.html", null ],
+    [ "Wocket::Hardware::Pinout", "struct_wocket_1_1_hardware_1_1_pinout.html", null ],
     [ "Platform", "class_platform.html", [
       [ "Rockit", "class_rockit.html", null ]
     ] ],

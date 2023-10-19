@@ -65,7 +65,7 @@ var files_dup =
     [ "MS5637.cpp", "_m_s5637_8cpp.html", null ],
     [ "MS5637.h", "_m_s5637_8h.html", null ],
     [ "Pinout.h", "_pinout_8h.html", [
-      [ "Pinout", "struct_pinout.html", "struct_pinout" ]
+      [ "Pinout", "struct_wocket_1_1_hardware_1_1_pinout.html", "struct_wocket_1_1_hardware_1_1_pinout" ]
     ] ],
     [ "Pins.cpp", "_pins_8cpp.html", "_pins_8cpp" ],
     [ "Pins.h", "_pins_8h.html", "_pins_8h" ],

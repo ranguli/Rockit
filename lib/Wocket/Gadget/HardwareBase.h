@@ -7,10 +7,6 @@ namespace Wocket {
 namespace Hardware{
 
 enum class HardwareCapability {
-    CAPABILITY_STATUS_LED = 1 << 0,
-    CAPABILITY_BATTERY_LED = 1 << 1,
-    CAPABILITY_PIEZO_BUZZER = 1 << 2,
-    CAPABILITY_SERVO = 1 << 3,
 };
 
 using HardwareCapabilityFlags = std::bitset<32>;

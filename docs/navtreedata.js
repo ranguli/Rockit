@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Wocket", "index.html", [
+    [ "Kernel", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [

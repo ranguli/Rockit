@@ -7,7 +7,8 @@ var annotated_dup =
         [ "BuzzerFactory", "class_wocket_1_1_hardware_1_1_buzzer_factory.html", "class_wocket_1_1_hardware_1_1_buzzer_factory" ],
         [ "EEPROM", "class_wocket_1_1_hardware_1_1_e_e_p_r_o_m.html", "class_wocket_1_1_hardware_1_1_e_e_p_r_o_m" ],
         [ "HardwareBase", "class_wocket_1_1_hardware_1_1_hardware_base.html", "class_wocket_1_1_hardware_1_1_hardware_base" ],
-        [ "HardwarePackage", "class_wocket_1_1_hardware_1_1_hardware_package.html", "class_wocket_1_1_hardware_1_1_hardware_package" ]
+        [ "HardwarePackage", "class_wocket_1_1_hardware_1_1_hardware_package.html", "class_wocket_1_1_hardware_1_1_hardware_package" ],
+        [ "Pinout", "struct_wocket_1_1_hardware_1_1_pinout.html", "struct_wocket_1_1_hardware_1_1_pinout" ]
       ] ],
       [ "Platform", "namespace_wocket_1_1_platform.html", [
         [ "Arduino", "namespace_wocket_1_1_platform_1_1_arduino.html", [
@@ -28,7 +29,6 @@ var annotated_dup =
     [ "CircularBuffer", "class_circular_buffer.html", "class_circular_buffer" ],
     [ "DataLogger", "class_data_logger.html", "class_data_logger" ],
     [ "LaunchDetector", "class_launch_detector.html", "class_launch_detector" ],
-    [ "Pinout", "struct_pinout.html", "struct_pinout" ],
     [ "Platform", "class_platform.html", "class_platform" ],
     [ "Rockit", "class_rockit.html", "class_rockit" ],
     [ "ServoMotor", "class_servo_motor.html", "class_servo_motor" ],

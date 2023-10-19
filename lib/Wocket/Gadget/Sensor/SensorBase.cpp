@@ -1,8 +1,8 @@
 #include "Sensor.h"
 
-using namespace Wocket::Sensor;
+using namespace Wocket::Gadget;
 
-SensorBase::~SensorBase() {}
+SensorBase::~GadgetBase() {}
 
 std::optional<WocketAccelerationData> SensorBase::getAccelerationReading() const {
     return {};

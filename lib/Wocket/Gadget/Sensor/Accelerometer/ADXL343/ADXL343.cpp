@@ -10,7 +10,7 @@ using namespace Wocket::Sensor;
 ADXL343::ADXL343(const WocketAccelerometerConfig& config) 
 : sensor(config.uid, config.wire) {}
 
-bool ADXL343::begin() {
+bool ADXL343::setup() override {
   if(!this->sensor.begin()) {
       return false;
   }

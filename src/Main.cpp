@@ -1,66 +1,15 @@
-#include <SD.h>
-#include <EEPROM.h>
-#include "pico/stdlib.h"
-
-#include <Wire.h>
-#include <SPI.h>
-
-#include "CircularBuffer.h"
-
-#include "Config.h"
-#include "DataLogger.h"
-#include "KalmanFilter.h"
-
-#include "LEDs.h"
-#include "Battery.h"
-#include "ServoMotor.h"
-
-#include "WocketAccelerationData.h"
-
-//#include "Hardware/Sensors/BarometricSensor.h"
-
-#include "BeepAndBlink.h"
-
-//#include "stages/RecoveryStage.h"
-//#include "stages/PreLaunchStage.h"
-
-#include "RotarySwitch.h"
-#include "State.h"
-
-#include "LaunchDetector.h"
-
-
-CircularBuffer<float, 100> FilteredAltitudes;
-CircularBuffer<float, 100> altitudes;
-CircularBuffer<float, 100> accelerations;
-CircularBuffer<long, 100> times;
-
-//Physical magnitudes
-float altold;  //Baseline pressure
-int altMax;    //Rounded maximum altitude
-
-float temp;
-float currentPressure;
-float altitudeDelta;
-float filteredAltitudeDelta;
-float acceleration;
-
-//Definition of time and auxiliary integers
-int tconfig, n, p = 0, r = 0;
-int deltat;   //Time step of every loop iteration
-long int t1;  //Time variables
-long int t4;
-
-LaunchDetector launchDetector;
-
-// Create a Logger object, and log file.
-DataLogger logger;
-File logfile;
-
-Wocket::Sensor::SensorPackage sensorPackage = new Wocket::Sensor::SensorPackage();
+#include <Arduino.h>
 
 void setup() {
   //Serial.begin(9600); //For debugging purposes only
+
+  /**
+
+  hardwarePackage.setup();
+  sensorPackage.setup();
+
+  kernel.setup();
+
   EEPROM.begin(512);  //Emulates EEPROM by allocating 512 kB from the flash memory
 
   Wire1.setSDA(PIN_I2C_SDA);
@@ -89,102 +38,58 @@ void setup() {
   logger.begin();
   String logFilename = logger.getNewLogFilename();
   logfile = logger.open(logFilename);
-}
 
 
-void logPreLaunchData() {
-  accelerations.push(acceleration);
-  altitudes.push(altitudeDelta);
-  FilteredAltitudes.push(filteredAltitudeDelta);
-  times.push(millis() - t4);  //Circular buffer for time
-
-  for (int i = 0; i <= 99; i++) {        //Saving the buffer allows me to store the data measured before launch.
-  /**
-    logfile.print(times[i] - times[0]);  //Here times[0] sets the time zero for the time variable
-    logfile.print(',');
-    logfile.print(altitudes.shift());
-    logfile.print(',');
-    logfile.print(FilteredAltitudes.shift());
-    logfile.print(',');
-    logfile.print(accelerations.shift());
-    logfile.print(',');
-    logfile.print(event.acceleration.z / 9.81);
-    logfile.print(',');
-    logfile.println(temp, 1);
-    **/
-  }
-
-  logfile.flush();  //Store data of the 908 ms before launch
-}
-
-void flightLoop() {
-  /** The rockit can be in one of four different flight states:
-   *  - 1) On the ground, pre-launch.
-   *  - 2) Post launch, in mid-flight
-   *  - 3) Post launch, in recovery
-   *  - 4) Post launch,
-   **/
-
-
-  static bool flightIsOver = false;
-
-  if (flightIsOver) {
-    // Beep and blink indefinitely, never return.
-    beepnblink();
-  }
-
-  barometer->getPressureReading();
-  temp = barometer->getTemperatureReading();
-  WocketAccelerationData accelerationData = accelerometer->getAccelerationReading();
-
-  altitudeDelta = barometer->getAltitudeDelta();
-  filteredAltitudeDelta = barometer->getFilteredAltitudeDelta();
-
-  // Store data to the circular buffer
-  if (!launchDetector.launchDetected(acceleration, altitudeDelta)) {
-    logPreLaunchData();
-  }
-
-  t1 = millis() - t4 - times[0];
-  
-  //recoveryStage();
-
-  /**
-  logfile.print(t1);
-  logfile.print(',');
-  logfile.print(altitudeDelta);
-  logfile.print(',');
-  logfile.print(filteredAltitudeDelta);
-  logfile.print(',');
-  logfile.print(acceleration);
-  logfile.print(',');
-  logfile.print(event.acceleration.z / 9.81);
-  logfile.print(',');
-  logfile.println(temp, 1);
   **/
+}
 
-  if (altitudeDelta > altold) {  //Here is where I store the maximum altitude value
-    altMax = round(altitudeDelta);
-    altold = altMax;
-  }
+const int BATTERY_LED_PIN = 2;  // Battery indicator LED
+const int STATUS_LED_PIN = 26;  // Status LED, used to indicate errors to the user
 
-  if (r == 200 && flightIsOver == false) {  //Here I set the rate at which I send data to the uSD card
-    r = 0;
-    logfile.flush();
-  }
-  r++;
+void setupLEDs() {
+  pinMode(BATTERY_LED_PIN, OUTPUT);  // Low battery LED
+  pinMode(STATUS_LED_PIN, OUTPUT);   // Status LED
+}
 
+void turnOnStatusLED() {
+  // Turn on the blue status LED.
+  digitalWrite(STATUS_LED_PIN, HIGH);
+}
 
-  if (t1 >= FLIGHT_COMPUTER_TIMEOUT_MS) {
-    flightIsOver = true;
-    logfile.flush();
-    logfile.close();  //After timeout flush the data to the microSD card and close the file
+void turnOffStatusLED() {
+  // Turn off the blue status LED .
+  digitalWrite(STATUS_LED_PIN, LOW);
+}
+
+void blinkStatusLED(int n) {  // Blinks the blue status LED every 200 ms
+  for (int i = 0; i <= n; i++) {
+    digitalWrite(STATUS_LED_PIN, HIGH);
+    delay(200);
+    digitalWrite(STATUS_LED_PIN, LOW);
+    delay(200);
   }
 }
+
+void turnOnLowBatteryLED() {
+  digitalWrite(BATTERY_LED_PIN, HIGH);
+}
+
+void turnOffLowBatteryLED() {
+  digitalWrite(BATTERY_LED_PIN, LOW);
+}
+
+
 
 void loop() {
+  setupLEDs();
+  turnOnStatusLED();
+  delay(500);
+  turnOnLowBatteryLED();
+  delay(500);
+  blinkStatusLED(5);
   // Set the low battery LED if battery voltage is low.
-  setLowBatteryLED();
+  //setLowBatteryLED();
 
-  flightLoop();
+  //Kernel.think();
+  //flightLoop();
 }

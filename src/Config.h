@@ -46,22 +46,6 @@ extern const float ADC_REFERENCE_VOLTAGE;
 
 // Pinouts:
 
-// I2C
-#define PIN_I2C_SCL 11
-
-// Servo settings
-#define SERVO_0_PIN 28
-#define SERVO_1_PIN 27
-#define SERVO_POWER_SAVING_TIMEOUT_MS 1999
-#define SERVO_DELAY_MS 499
-#define SERVO_CURRENT_SPIKE_DELAY_MS 99
-
-
-#define PIEZO_BUZZER_PIN 12
-#define PIEZO_BUZZER_DUTY_CYCLE 50
-#define PIEZO_BUZZER_FREQUENCY 4000
-#define PIEZO_BUZZER_DYNAMIC_RANGE 100
-#define PIEZO_BUZZER_ENABLED 1
 
 
 // --------------------

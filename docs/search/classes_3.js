@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['datalogger_307',['DataLogger',['../class_data_logger.html',1,'']]]
+  ['datalogger_310',['DataLogger',['../class_data_logger.html',1,'']]]
 ];
